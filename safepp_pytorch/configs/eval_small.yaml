@@ -1,0 +1,30 @@
+seed: 3407
+output_dir: outputs/eval_small
+model:
+  name: safepp_dual
+  rgb_backbone: convnext_tiny.fb_in22k_ft_in1k
+  forensic_backbone: resnet18
+  wave: bior1.3
+  mode: symmetric
+  rgb_drop: 0.2
+  forensic_drop: 0.1
+  fusion_dim: 384
+  pretrained_rgb: false
+  pretrained_forensic: false
+
+data:
+  test_csv: data/small/test_unseen.csv
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  image_size: 256
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+
+eval:
+  batch_size_per_gpu: 64
+  tta: 5
+  thresholds:
+    p95: null
+    p98: null
+    p99: null

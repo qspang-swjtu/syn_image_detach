@@ -1,0 +1,88 @@
+# Example manifest for building a compact validation benchmark.
+# Fill in the real paths you already downloaded.
+#
+# split_hint supports:
+# - seen: source participates in train/val/test_seen
+# - unseen: source is kept only for test_unseen
+# - robust: optional extra pool for stage2 robustness finetuning
+#
+# A good mini benchmark uses:
+# - real: 2 seen sources
+# - fake: 3 seen sources (covering at least 1 GAN + 2 diffusion/DiT if possible)
+# - fake unseen: 1-2 unseen generators reserved only for test_unseen
+
+exts: [jpg, jpeg, png, webp, bmp]
+recursive: true
+sources:
+  - name: real_wildfake
+    path: /data/WildFake/real
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_genimage
+    path: /data/GenImage/real
+    label: 0
+    dataset: genimage
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: fake_biggan
+    path: /data/GenImage/fake/BigGAN
+    label: 1
+    dataset: genimage
+    domain: photo
+    generator: biggan
+    split_hint: seen
+
+  - name: fake_sd15
+    path: /data/DRAGON/SD15
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: sd15
+    split_hint: seen
+
+  - name: fake_adm
+    path: /data/GenImage/fake/ADM
+    label: 1
+    dataset: genimage
+    domain: photo
+    generator: adm
+    split_hint: seen
+
+  - name: fake_flux
+    path: /data/DRAGON/Flux
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: flux
+    split_hint: unseen
+
+  - name: fake_pixart
+    path: /data/DRAGON/PixArt
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: pixart
+    split_hint: unseen
+
+  # Optional: real/fake samples that already went through social-media or extra codec chains.
+  - name: robust_truefake_real
+    path: /data/TrueFake/real
+    label: 0
+    dataset: truefake
+    domain: social
+    generator: real
+    split_hint: robust
+
+  - name: robust_truefake_fake
+    path: /data/TrueFake/fake
+    label: 1
+    dataset: truefake
+    domain: social
+    generator: mixed
+    split_hint: robust
