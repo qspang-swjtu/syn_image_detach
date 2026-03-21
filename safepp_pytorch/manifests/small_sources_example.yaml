@@ -1,88 +1,96 @@
-# Example manifest for building a compact validation benchmark.
-# Fill in the real paths you already downloaded.
-#
-# split_hint supports:
-# - seen: source participates in train/val/test_seen
-# - unseen: source is kept only for test_unseen
-# - robust: optional extra pool for stage2 robustness finetuning
-#
-# A good mini benchmark uses:
-# - real: 2 seen sources
-# - fake: 3 seen sources (covering at least 1 GAN + 2 diffusion/DiT if possible)
-# - fake unseen: 1-2 unseen generators reserved only for test_unseen
 
 exts: [jpg, jpeg, png, webp, bmp]
 recursive: true
 sources:
-  - name: real_wildfake
-    path: /data/WildFake/real
+  - name: real_ff
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/FaceForensics++/original_sequences
     label: 0
-    dataset: wildfake
+    dataset: ff
     domain: photo
     generator: real
     split_hint: seen
 
-  - name: real_genimage
-    path: /data/GenImage/real
+  - name: real_cdf
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/Celeb-DF-v2
     label: 0
-    dataset: genimage
+    dataset: cdf
     domain: photo
     generator: real
     split_hint: seen
 
-  - name: fake_biggan
-    path: /data/GenImage/fake/BigGAN
+    # ================= 假图 (Fake) - 训练可见 (Seen) =================
+  - name: fake_ddim
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/ddim
     label: 1
-    dataset: genimage
+    dataset: df40
     domain: photo
-    generator: biggan
+    generator: ddim
     split_hint: seen
 
-  - name: fake_sd15
-    path: /data/DRAGON/SD15
+  - name: fake_dit
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/DiT
     label: 1
-    dataset: dragon
+    dataset: df40
     domain: photo
-    generator: sd15
+    generator: dit
     split_hint: seen
 
-  - name: fake_adm
-    path: /data/GenImage/fake/ADM
+
+  - name: fake_sd2.1
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/sd2.1
     label: 1
-    dataset: genimage
+    dataset: df40
     domain: photo
-    generator: adm
+    generator: sd2.1
     split_hint: seen
 
-  - name: fake_flux
-    path: /data/DRAGON/Flux
+  - name: fake_stylegan3
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/StyleGAN3
     label: 1
-    dataset: dragon
+    dataset: df40
     domain: photo
-    generator: flux
-    split_hint: unseen
+    generator: stylegan3
+    split_hint: seen
 
   - name: fake_pixart
-    path: /data/DRAGON/PixArt
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/pixart
     label: 1
-    dataset: dragon
+    dataset: df40
     domain: photo
     generator: pixart
+    split_hint: seen
+
+  - name: fake_rddm
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/RDDM
+    label: 1
+    dataset: df40
+    domain: photo
+    generator: rddm
+    split_hint: seen
+
+  - name: fake_styleganxl
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/StyleGANXL
+    label: 1
+    dataset: df40
+    domain: photo
+    generator: styleganxl
+    split_hint: seen
+    
+    # ================= 假图 (Fake) - 仅测试可见 (Unseen Holdouts) =================
+    # 将 SiT (现代扩散模型) 和 simswap (换脸) 留作泛化能力测试
+  - name: fake_sit
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/SiT
+    label: 1
+    dataset: df40
+    domain: photo
+    generator: sit
     split_hint: unseen
 
-  # Optional: real/fake samples that already went through social-media or extra codec chains.
-  - name: robust_truefake_real
-    path: /data/TrueFake/real
-    label: 0
-    dataset: truefake
-    domain: social
-    generator: real
-    split_hint: robust
-
-  - name: robust_truefake_fake
-    path: /data/TrueFake/fake
+  - name: fake_simswap
+    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/simswap
     label: 1
-    dataset: truefake
-    domain: social
-    generator: mixed
-    split_hint: robust
+    dataset: df40
+    domain: photo
+    generator: simswap
+    split_hint: unseen
+
