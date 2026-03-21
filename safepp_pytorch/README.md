@@ -1,4 +1,4 @@
-# SAFE++ PyTorch minimal training skeleton
+#  PyTorch minimal training skeleton
 
 A minimal, executable PyTorch implementation for a dual-branch synthetic image detector inspired by SAFE:
 - RGB branch: ConvNeXt-Tiny
