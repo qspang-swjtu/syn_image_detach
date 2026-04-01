@@ -40,7 +40,6 @@ Notes:
 ```bash
 torchrun --nproc_per_node=2 src/train.py --config configs/stage1.yaml
 torchrun --nproc_per_node=2 src/train.py --config configs/stage2.yaml --resume outputs/stage1/best.pt
-torchrun --nproc_per_node=2 src/train.py --config configs/stage3.yaml --resume outputs/stage2/best.pt
 ```
 
 Each stage config now contains:
@@ -98,10 +97,10 @@ What the script does:
 - optionally writes a merged stage-3 training CSV
 
 Recommended loop:
-1. Train stage 1 and stage 2.
+1. Train stage 1 .
 2. Run `auto_replay.py` on a reviewed pool of new traffic or external hard sets.
-3. Point `configs/stage3.yaml -> data.train_csv` to the merged CSV.
-4. Run stage 3 hard-example tuning.
+3. Point `configs/stage2.yaml -> data.train_csv` to the merged CSV.
+4. Run stage 2 hard-example tuning.
 
 ## Practical notes
 
@@ -136,7 +135,6 @@ python src/tools/make_small_splits.py   --input_csv data/index/all_samples.csv  
 This writes:
 - `train_stage1.csv`
 - `train_stage2.csv`
-- `train_stage3.csv`
 - `val.csv`
 - `test_seen.csv`
 - `test_unseen.csv`
@@ -154,7 +152,6 @@ python src/tools/make_small_splits.py   --input_csv data/index/all_samples.csv  
 ```bash
 torchrun --nproc_per_node=2 src/train.py --config configs/stage1_small.yaml
 torchrun --nproc_per_node=2 src/train.py --config configs/stage2_small.yaml --resume outputs/stage1_small/best.pt
-torchrun --nproc_per_node=2 src/train.py --config configs/stage3_small.yaml --resume outputs/stage2_small/best.pt
 ```
 
 ### 4) Evaluate unseen-generator generalization
