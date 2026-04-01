@@ -1,96 +1,289 @@
-
 exts: [jpg, jpeg, png, webp, bmp]
 recursive: true
 sources:
-  - name: real_ff
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/FaceForensics++/original_sequences
+  # -----------------------
+  # WildFake real
+  # -----------------------
+  - name: real_afhq
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/afhq/afhq
     label: 0
-    dataset: ff
+    dataset: wildfake
     domain: photo
     generator: real
     split_hint: seen
 
-  - name: real_cdf
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/Celeb-DF-v2
+  - name: real_afhq_v2
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/afhq/afhq_v2
     label: 0
-    dataset: cdf
+    dataset: wildfake
     domain: photo
     generator: real
     split_hint: seen
 
-    # ================= 假图 (Fake) - 训练可见 (Seen) =================
+  - name: real_celebahq
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/celebahq/data1024x1024
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_church
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/church/church
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_coco
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/coco/coco2017
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_ffhq
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/ffhq/images
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_imagenet_train
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/imagenet/train
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_imagenet_val
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/imagenet/val
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_laion5b
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/laion5b/imgs
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  # - name: real_wukong
+  #   path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/wukong
+  #   label: 0
+  #   dataset: wildfake
+  #   domain: photo
+  #   generator: real
+  #   split_hint: seen
+
+  # -----------------------
+  # WildFake fake - seen
+  # -----------------------
+  - name: fake_adm
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/ADM
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: ADM
+    split_hint: seen
+
   - name: fake_ddim
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/ddim
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/DDIM
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: ddim
+    generator: DDIM
     split_hint: seen
 
-  - name: fake_dit
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/DiT
+  - name: fake_ddpm
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/DDPM
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: dit
+    generator: DDPM
     split_hint: seen
 
-
-  - name: fake_sd2.1
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/sd2.1
+  - name: fake_midjourney
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/Midjourney
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: sd2.1
+    generator: Midjourney
     split_hint: seen
 
-  - name: fake_stylegan3
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/StyleGAN3
+  - name: fake_sd
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/SD
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: stylegan3
+    generator: SD
     split_hint: seen
 
-  - name: fake_pixart
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/pixart
+  - name: fake_vqdm
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/VQDM
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: pixart
+    generator: VQDM
     split_hint: seen
 
-  - name: fake_rddm
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/RDDM
+  - name: fake_biggan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/GAN_based/Typical/BigGAN
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: rddm
+    generator: BigGAN
     split_hint: seen
 
-  - name: fake_styleganxl
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/StyleGANXL
+  - name: fake_stylegan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/GAN_based/Typical/styleGAN
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: styleganxl
+    generator: styleGAN
     split_hint: seen
-    
-    # ================= 假图 (Fake) - 仅测试可见 (Unseen Holdouts) =================
-    # 将 SiT (现代扩散模型) 和 simswap (换脸) 留作泛化能力测试
-  - name: fake_sit
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/SiT
+
+  - name: fake_mae
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Other_based/Advanced/MAE
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: sit
+    generator: MAE
+    split_hint: seen
+
+  - name: fake_mage
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Other_based/Advanced/MAGE
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: MAGE
+    split_hint: seen
+
+  # -----------------------
+  # WildFake fake - unseen
+  # -----------------------
+  - name: fake_dalle
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/DALLE
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: DALLE
     split_hint: unseen
 
-  - name: fake_simswap
-    path: /ai_paas_jf/ai_paas_weilx/datasets/DF40/DF40_train/simswap
+  - name: fake_imagen
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/Imagen
     label: 1
-    dataset: df40
+    dataset: wildfake
     domain: photo
-    generator: simswap
+    generator: Imagen
     split_hint: unseen
 
+  - name: fake_gigagan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/GAN_based/Advanced/GigaGAN
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: GigaGAN
+    split_hint: unseen
+
+  - name: fake_vqgan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Other_based/Typical/VQGAN
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: VQGAN
+    split_hint: unseen
+
+  # -----------------------
+  # DRAGON train - seen fake
+  # -----------------------
+  - name: fake_sd_1.5
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SD_1.5
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SD_1.5
+    split_hint: seen
+
+  - name: fake_sd_2.1
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SD_2.1
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SD_2.1
+    split_hint: seen
+
+  - name: fake_sdxl
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SDXL
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SDXL
+    split_hint: seen
+
+  - name: fake_sd_3
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SD_3
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SD_3
+    split_hint: seen
+
+  - name: fake_pixart_alpha
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/PixArt_Alpha
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: PixArt_Alpha
+    split_hint: seen
+
+  - name: fake_pixart_sigma
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/PixArt_Sigma
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: PixArt_Sigma
+    split_hint: seen
+
+  - name: fake_kandinsky
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/Kandinsky
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: Kandinsky
+    split_hint: seen
+
+  - name: fake_if
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/IF
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: IF
+    split_hint: seen
+
+  - name: fake_hyper_sd
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/Hyper_SD
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: Hyper_SD
+    split_hint: seen
+
+  - name: fake_juggernautxl
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/JuggernautXL
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: JuggernautXL
+    split_hint: seen
+
+  # - name: fake_sd_2.1
+  #   path: /ai_
