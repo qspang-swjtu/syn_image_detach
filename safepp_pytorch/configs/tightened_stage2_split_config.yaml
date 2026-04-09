@@ -1,0 +1,117 @@
+semantic_dedup:
+  # The stage-1 report already removed about 3.67% globally, but the removals are very uneven.
+  # The main stage-2 target is therefore not the sources that already lost ~50%,
+  # but the very large sources whose stage-1 removal stayed below ~5%.
+  seen_only: true
+  skip_datasets:
+    - fakeclue
+    - dragon
+  skip_split_hints:
+    - unseen
+    - test_unseen
+    - test_hard_photo
+    - test_cross_domain
+    - test_face_manip
+  base_component_col_candidates:
+    - tight_split_component_id
+    - split_component_id
+    - dedup_component_id
+    - group_id
+    - path
+  auto_focus:
+    enabled: true
+    min_clean_rows: 100000
+    max_stage1_removed_ratio: 0.05
+  # Explicitly force the largest low-removal sources into stage-2 semantic dedup.
+  explicit_focus_sources:
+    - fake_sd
+    - fake_midjourney
+    - real_laion5b
+    - fake_adm
+    - fake_vqdm
+  # Source-size-dependent thresholds.
+  # The larger the source, the looser the threshold can be, because those sources are where
+  # repeated prompts / repeated visual templates tend to dominate learning.
+  tier_rules:
+    huge:
+      min_rows: 300000
+      cosine_threshold: 0.9920
+      topk: 64
+    large:
+      min_rows: 100000
+      cosine_threshold: 0.9935
+      topk: 48
+    medium:
+      min_rows: 50000
+      cosine_threshold: 0.9950
+      topk: 32
+  batch_size: 256
+  num_workers: 8
+
+split:
+  unit_col_candidates:
+    - tight_split_component_id
+    - split_component_id
+    - dedup_component_id
+    - group_id
+    - path
+
+  # Use manifest roles when they exist, but keep an explicit backup list for the current corpus.
+  test_role_values:
+    - unseen
+    - test_unseen
+    - test_hard_photo
+    - test_cross_domain
+    - test_face_manip
+  explicit_test_sources:
+    - fake_dalle
+    - fake_imagen
+    - fake_gigagan
+    - fake_vqgan
+    - fakeclue_chameleon_real
+    - fakeclue_chameleon_fake
+    - fakeclue_doc_real
+    - fakeclue_doc_fake
+    - fakeclue_satellite_real
+    - fakeclue_satellite_fake
+    - fakeclue_ffpp_real
+    - fakeclue_ffpp_fake
+  explicit_test_generators: []
+
+  # If you want FakeClue to stay as pure external evaluation only, keep it excluded.
+  exclude_datasets_from_train: []
+
+  val_unseen:
+    # Real side: keep source overlap out of the hard validation.
+    real_sources:
+      - real_ffhq
+      - real_imagenet_val
+    # Fake side: hold out newer / different diffusion variants entirely from training.
+    fake_generators:
+      - SD_3
+      - IF
+      - Kandinsky
+      - PixArt_Sigma
+      - Hyper_SD
+      - JuggernautXL
+    fake_sources: []
+    real_target_rows: 6000
+    fake_target_rows: 6000
+
+  val_seen:
+    real_bucket_col: source
+    fake_bucket_col: source
+    # Sample by split unit, not by path, so semantically tied samples stay together.
+    rules:
+      - min_rows: 200000
+        ratio: 0.01
+        min_rows_out: 1200
+        cap_rows_out: 3000
+      - min_rows: 50000
+        ratio: 0.02
+        min_rows_out: 600
+        cap_rows_out: 1600
+      - min_rows: 0
+        ratio: 0.05
+        min_rows_out: 200
+        cap_rows_out: 800
