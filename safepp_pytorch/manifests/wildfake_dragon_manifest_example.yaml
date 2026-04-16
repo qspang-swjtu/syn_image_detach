@@ -1,0 +1,362 @@
+exts: [jpg, jpeg, png, webp, bmp]
+recursive: true
+sources:
+  # -----------------------
+  # WildFake real
+  # -----------------------
+  - name: real_afhq
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/afhq/afhq
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+
+  - name: real_celebahq
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/celebahq/data1024x1024
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_church
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/church/church
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_coco
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/coco/coco2017
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_ffhq
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/ffhq/images
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_imagenet_train
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/imagenet/train
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_imagenet_val
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/imagenet/val
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: real_laion5b
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/laion5b/imgs
+    label: 0
+    dataset: wildfake
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  # - name: real_wukong
+  #   path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Real/wukong
+  #   label: 0
+  #   dataset: wildfake
+  #   domain: photo
+  #   generator: real
+  #   split_hint: seen
+
+  # -----------------------
+  # WildFake fake - seen
+  # -----------------------
+  - name: fake_adm
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/ADM
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: ADM
+    split_hint: seen
+
+  # -----------------------
+  # FakeClue train
+  # -----------------------
+  # - name: fakeclue_chameleon_real
+  #   path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/chameleon/real
+  #   label: 0
+  #   dataset: fakeclue
+  #   domain: photo
+  #   generator: real
+  #   split_hint: seen
+
+  - name: fakeclue_chameleon_fake
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/chameleon/fake
+    label: 1
+    dataset: fakeclue
+    domain: photo
+    generator: chameleon
+    split_hint: seen
+
+  - name: fakeclue_genimage_real
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/genimage/real
+    label: 0
+    dataset: fakeclue
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: fakeclue_genimage_fake
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/genimage/fake
+    label: 1
+    dataset: fakeclue
+    domain: photo
+    generator: genimage
+    split_hint: seen
+
+  - name: fakeclue_ffpp_real
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/ff++/real
+    label: 0
+    dataset: fakeclue
+    domain: photo
+    generator: real
+    split_hint: seen
+
+  - name: fakeclue_ffpp_fake
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/ff++/fake
+    label: 1
+    dataset: fakeclue
+    domain: photo
+    generator: ff++
+    split_hint: seen
+
+  - name: fakeclue_doc_real
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/doc/real
+    label: 0
+    dataset: fakeclue
+    domain: document
+    generator: real
+    split_hint: seen
+
+  - name: fakeclue_doc_fake
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/doc/fake
+    label: 1
+    dataset: fakeclue
+    domain: document
+    generator: doc
+    split_hint: seen
+
+  - name: fakeclue_satellite_real
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/satellite/real
+    label: 0
+    dataset: fakeclue
+    domain: satellite
+    generator: real
+    split_hint: seen
+
+  - name: fakeclue_satellite_fake
+    path: /ai_paas_jf/ai_paas_weilx/datasets/fakeclue/train/satellite/fake
+    label: 1
+    dataset: fakeclue
+    domain: satellite
+    generator: satellite
+    split_hint: seen
+    
+  - name: fake_ddim
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/DDIM
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: DDIM
+    split_hint: seen
+
+  - name: fake_ddpm
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/DDPM
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: DDPM
+    split_hint: seen
+
+  - name: fake_midjourney
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/Midjourney
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: Midjourney
+    split_hint: seen
+
+  - name: fake_sd
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/SD
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: SD
+    split_hint: seen
+
+  - name: fake_vqdm
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/VQDM
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: VQDM
+    split_hint: seen
+
+  - name: fake_biggan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/GAN_based/Typical/BigGAN
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: BigGAN
+    split_hint: seen
+
+  - name: fake_stylegan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/GAN_based/Typical/styleGAN
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: styleGAN
+    split_hint: seen
+
+  - name: fake_mae
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Other_based/Advanced/MAE
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: MAE
+    split_hint: seen
+
+  - name: fake_mage
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Other_based/Advanced/MAGE
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: MAGE
+    split_hint: seen
+
+  # -----------------------
+  # WildFake fake - unseen
+  # -----------------------
+  - name: fake_dalle
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/DALLE
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: DALLE
+    split_hint: unseen
+
+  - name: fake_imagen
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Diffusion_based/Imagen
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: Imagen
+    split_hint: unseen
+
+  - name: fake_gigagan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/GAN_based/Advanced/GigaGAN
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: GigaGAN
+    split_hint: unseen
+
+  - name: fake_vqgan
+    path: /ai_paas_jf/ai_paas_weilx/datasets/wildfake/Images/Other_based/Typical/VQGAN
+    label: 1
+    dataset: wildfake
+    domain: photo
+    generator: VQGAN
+    split_hint: unseen
+
+  # -----------------------
+  # DRAGON train - seen fake
+  # -----------------------
+  - name: fake_sd_1.5
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SD_1.5
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SD_1.5
+    split_hint: seen
+
+  - name: fake_sd_2.1
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SD_2.1
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SD_2.1
+    split_hint: seen
+
+  - name: fake_sdxl
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SDXL
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SDXL
+    split_hint: seen
+
+  - name: fake_sd_3
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/SD_3
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: SD_3
+    split_hint: seen
+
+  - name: fake_pixart_alpha
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/PixArt_Alpha
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: PixArt_Alpha
+    split_hint: seen
+
+  - name: fake_pixart_sigma
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/PixArt_Sigma
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: PixArt_Sigma
+    split_hint: seen
+
+  - name: fake_kandinsky
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/Kandinsky
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: Kandinsky
+    split_hint: seen
+
+  - name: fake_if
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/IF
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: IF
+    split_hint: seen
+
+  - name: fake_hyper_sd
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/Hyper_SD
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: Hyper_SD
+    split_hint: seen
+
+  - name: fake_juggernautxl
+    path: /ai_paas_jf/ai_paas_weilx/datasets/dragion/dragon_extracted/train/JuggernautXL
+    label: 1
+    dataset: dragon
+    domain: photo
+    generator: JuggernautXL
+    split_hint: seen
