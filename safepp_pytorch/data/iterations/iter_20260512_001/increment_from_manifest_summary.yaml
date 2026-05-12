@@ -1,0 +1,10 @@
+manifest: G:\shixi\May\code\syn_image_detach\safepp_pytorch\manifests\increment_manifest.yaml
+num_rows: 67
+by_label:
+  1: 67
+by_source:
+  hard: 67
+by_dataset:
+  collected: 67
+by_split_hint:
+  hard: 67

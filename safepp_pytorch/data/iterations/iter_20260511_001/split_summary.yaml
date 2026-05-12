@@ -1,0 +1,277 @@
+source_csv: G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260511_001\all_samples.csv
+hard_csv: ''
+reviewed_pool_csv: ''
+train_plan: hard_in_stage2
+val_include_hard: false
+targets:
+  val_real_total: 3000
+  val_fake_total: 3000
+  val_real_group_col: source
+  val_fake_group_col: generator
+hints:
+  test_unseen_hints:
+  - unseen
+  - test_unseen
+  hard_hints:
+  - hard
+  - hard_negative
+  - collected_hard
+  - train_hard
+  reviewed_pool_hints:
+  - reviewed
+  - reviewed_pool
+  - replay_candidate
+  - candidate
+  hard_flag_col: is_hard_negative
+  hard_flag_values:
+  - '1'
+  - 'true'
+  - y
+  - 'yes'
+splits:
+  all_input:
+    num_rows: 5067
+    num_unique_paths: 5067
+    by_label:
+      0: 1808
+      1: 3259
+    by_source:
+      genimage_real: 1024
+      genimage_fake: 916
+      satellite_fake: 443
+      chameleon_fake: 441
+      satellite_real: 432
+      ff++_Face2Face: 250
+      ff++_real: 236
+      ff++_Deepfakes: 229
+      ff++_NeuralTextures: 227
+      ff++_FaceSwap: 226
+      doc_real: 116
+      hard: 67
+      doc_newspaper_ch: 63
+      doc_magazine_ch_3: 63
+      doc_paper_en: 61
+      doc_newspaper_en: 60
+      doc_magazine_en_3: 60
+      doc_magazine_en_2: 53
+      doc_paper_ch: 52
+      doc_magazine_ch_2: 48
+    fake_by_generator:
+      unknown_fake: 1800
+      Face2Face: 250
+      Deepfakes: 229
+      NeuralTextures: 227
+      FaceSwap: 226
+      gpt: 67
+      magazine_ch_3: 63
+      newspaper_ch: 63
+      paper_en: 61
+      magazine_en_3: 60
+      newspaper_en: 60
+      magazine_en_2: 53
+      paper_ch: 52
+      magazine_ch_2: 48
+    hard_rows: 0
+  seen_for_split:
+    num_rows: 5067
+    num_unique_paths: 5067
+    by_label:
+      0: 1808
+      1: 3259
+    by_source:
+      genimage_real: 1024
+      genimage_fake: 916
+      satellite_fake: 443
+      chameleon_fake: 441
+      satellite_real: 432
+      ff++_Face2Face: 250
+      ff++_real: 236
+      ff++_Deepfakes: 229
+      ff++_NeuralTextures: 227
+      ff++_FaceSwap: 226
+      doc_real: 116
+      hard: 67
+      doc_newspaper_ch: 63
+      doc_magazine_ch_3: 63
+      doc_paper_en: 61
+      doc_newspaper_en: 60
+      doc_magazine_en_3: 60
+      doc_magazine_en_2: 53
+      doc_paper_ch: 52
+      doc_magazine_ch_2: 48
+    fake_by_generator:
+      unknown_fake: 1800
+      Face2Face: 250
+      Deepfakes: 229
+      NeuralTextures: 227
+      FaceSwap: 226
+      gpt: 67
+      magazine_ch_3: 63
+      newspaper_ch: 63
+      paper_en: 61
+      magazine_en_3: 60
+      newspaper_en: 60
+      magazine_en_2: 53
+      paper_ch: 52
+      magazine_ch_2: 48
+    hard_rows: 67
+  train_base:
+    num_rows: 192
+    num_unique_paths: 192
+    by_label:
+      1: 192
+    by_source:
+      genimage_fake: 90
+      satellite_fake: 52
+      chameleon_fake: 50
+    fake_by_generator:
+      unknown_fake: 192
+    hard_rows: 0
+  train_hard:
+    num_rows: 67
+    num_unique_paths: 67
+    by_label:
+      1: 67
+    by_source:
+      hard: 67
+    fake_by_generator:
+      gpt: 67
+    hard_rows: 67
+  train_stage1:
+    num_rows: 192
+    num_unique_paths: 192
+    by_label:
+      1: 192
+    by_source:
+      genimage_fake: 90
+      satellite_fake: 52
+      chameleon_fake: 50
+    fake_by_generator:
+      unknown_fake: 192
+    hard_rows: 0
+  train_stage2:
+    num_rows: 259
+    num_unique_paths: 259
+    by_label:
+      1: 259
+    by_source:
+      genimage_fake: 90
+      hard: 67
+      satellite_fake: 52
+      chameleon_fake: 50
+    fake_by_generator:
+      unknown_fake: 192
+      gpt: 67
+    hard_rows: 67
+  train_stage3_initial:
+    num_rows: 259
+    num_unique_paths: 259
+    by_label:
+      1: 259
+    by_source:
+      genimage_fake: 90
+      hard: 67
+      satellite_fake: 52
+      chameleon_fake: 50
+    fake_by_generator:
+      unknown_fake: 192
+      gpt: 67
+    hard_rows: 67
+  val:
+    num_rows: 4808
+    num_unique_paths: 4808
+    by_label:
+      0: 1808
+      1: 3000
+    by_source:
+      genimage_real: 1024
+      genimage_fake: 826
+      satellite_real: 432
+      chameleon_fake: 391
+      satellite_fake: 391
+      ff++_Face2Face: 250
+      ff++_real: 236
+      ff++_Deepfakes: 229
+      ff++_NeuralTextures: 227
+      ff++_FaceSwap: 226
+      doc_real: 116
+      doc_newspaper_ch: 63
+      doc_magazine_ch_3: 63
+      doc_paper_en: 61
+      doc_newspaper_en: 60
+      doc_magazine_en_3: 60
+      doc_magazine_en_2: 53
+      doc_paper_ch: 52
+      doc_magazine_ch_2: 48
+    fake_by_generator:
+      unknown_fake: 1608
+      Face2Face: 250
+      Deepfakes: 229
+      NeuralTextures: 227
+      FaceSwap: 226
+      newspaper_ch: 63
+      magazine_ch_3: 63
+      paper_en: 61
+      newspaper_en: 60
+      magazine_en_3: 60
+      magazine_en_2: 53
+      paper_ch: 52
+      magazine_ch_2: 48
+    hard_rows: 0
+  test_unseen:
+    num_rows: 0
+    by_label: {}
+    by_source: {}
+    fake_by_generator: {}
+    hard_rows: 0
+  test_all:
+    num_rows: 4808
+    num_unique_paths: 4808
+    by_label:
+      0: 1808
+      1: 3000
+    by_source:
+      genimage_real: 1024
+      genimage_fake: 826
+      satellite_real: 432
+      chameleon_fake: 391
+      satellite_fake: 391
+      ff++_Face2Face: 250
+      ff++_real: 236
+      ff++_Deepfakes: 229
+      ff++_NeuralTextures: 227
+      ff++_FaceSwap: 226
+      doc_real: 116
+      doc_newspaper_ch: 63
+      doc_magazine_ch_3: 63
+      doc_paper_en: 61
+      doc_newspaper_en: 60
+      doc_magazine_en_3: 60
+      doc_magazine_en_2: 53
+      doc_paper_ch: 52
+      doc_magazine_ch_2: 48
+    fake_by_generator:
+      unknown_fake: 1608
+      Face2Face: 250
+      Deepfakes: 229
+      NeuralTextures: 227
+      FaceSwap: 226
+      newspaper_ch: 63
+      magazine_ch_3: 63
+      paper_en: 61
+      newspaper_en: 60
+      magazine_en_3: 60
+      magazine_en_2: 53
+      paper_ch: 52
+      magazine_ch_2: 48
+    hard_rows: 0
+  reviewed_pool:
+    num_rows: 0
+    by_label: {}
+    by_source: {}
+    fake_by_generator: {}
+    hard_rows: 0
+overlap_checks:
+  train_stage1_val_path_overlap: 0
+  train_stage2_val_path_overlap: 0
+  stage1_stage2_path_overlap: 192

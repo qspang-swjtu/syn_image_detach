@@ -1,7 +1,25 @@
 #!/usr/bin/env bash
 set -euo pipefail
 PYTHON_BIN="${PYTHON_BIN:-python}"
-TORCHRUN_CMD="${TORCHRUN_CMD:-${PYTHON_BIN} -m torch.distributed.run}"
+PYTHON_BIN="${PYTHON_BIN//\\//}"
+TORCHRUN_CMD="${TORCHRUN_CMD:-}"
+
+run_python() {
+  "${PYTHON_BIN}" "$@"
+}
+
+run_torchrun() {
+  if [[ "${NPROC}" -le 1 ]]; then
+    run_python "$@"
+    return
+  fi
+  if [[ -n "${TORCHRUN_CMD}" ]]; then
+    # shellcheck disable=SC2086
+    ${TORCHRUN_CMD} --nproc_per_node="${NPROC}" "$@"
+  else
+    "${PYTHON_BIN}" -m torch.distributed.run --nproc_per_node="${NPROC}" "$@"
+  fi
+}
 # 定位项目根目录。
 # 兼容两种放置方式：
 #   1) 推荐：safepp_pytorch_v2.0/scripts/run_iteration.sh
@@ -49,6 +67,16 @@ PRESET="${PRESET:-mini}"
 
 # torchrun 使用的进程数，通常等于使用的 GPU 数。
 NPROC="${NPROC:-1}"
+CUDA_DEVICE_COUNT="${CUDA_DEVICE_COUNT:-$(run_python -c "import torch; print(torch.cuda.device_count() if torch.cuda.is_available() else 0)" 2>/dev/null || echo 0)}"
+if [[ "${CUDA_DEVICE_COUNT}" =~ ^[0-9]+$ ]]; then
+  if [[ "${CUDA_DEVICE_COUNT}" -gt 0 && "${NPROC}" -gt "${CUDA_DEVICE_COUNT}" ]]; then
+    echo "[WARN] NPROC=${NPROC} exceeds visible CUDA devices=${CUDA_DEVICE_COUNT}; use NPROC=${CUDA_DEVICE_COUNT}"
+    NPROC="${CUDA_DEVICE_COUNT}"
+  elif [[ "${CUDA_DEVICE_COUNT}" -eq 0 && "${NPROC}" -gt 1 ]]; then
+    echo "[WARN] CUDA is not available; use NPROC=1"
+    NPROC="1"
+  fi
+fi
 
 # 随机种子，用于数据切分、采样和训练复现。
 SEED="${SEED:-3407}"
@@ -199,6 +227,10 @@ RUN_SCAN="${RUN_SCAN:-${RUN_FULL_SCAN}}"
 # 是否执行数据切分。
 RUN_SPLIT="${RUN_SPLIT:-1}"
 
+# 是否直接使用由平台提前准备好的 DATA_DIR。
+# USE_PREPARED_DATA=1 时跳过 BASE_CSV + INCREMENT_MANIFEST 合并、MANIFEST 扫描和数据切分。
+USE_PREPARED_DATA="${USE_PREPARED_DATA:-0}"
+
 # 是否训练 Stage1。
 RUN_STAGE1="${RUN_STAGE1:-1}"
 
@@ -257,7 +289,7 @@ if [[ -n "${INCREMENT_MANIFEST}" ]]; then echo "[INFO] increment manifest: ${INC
 
 row_count() {
   local csv_path="$1"
-  python - "$csv_path" <<'PY'
+  run_python - "$csv_path" <<'PY'
 import sys
 from pathlib import Path
 import pandas as pd
@@ -293,9 +325,27 @@ find_script() {
   fi
 }
 
-make_cfg() { python "$(find_script make_runtime_config.py)" "$@"; }
-warmstart() { python "$(find_script prepare_warmstart.py)" --input "$1" --output "$2" --prefer "${WARMSTART_PREFER:-ema}"; }
+make_cfg() { run_python "$(find_script make_runtime_config.py)" "$@"; }
+warmstart() { run_python "$(find_script prepare_warmstart.py)" --input "$1" --output "$2" --prefer "${WARMSTART_PREFER:-ema}"; }
 
+if [[ "${USE_PREPARED_DATA}" == "1" ]]; then
+  echo "[1/9] Use prepared data directory and skip merge/split"
+  required_files=(
+    "${DATA_DIR}/all_samples.csv"
+    "${DATA_DIR}/train_stage1.csv"
+    "${DATA_DIR}/train_stage2.csv"
+    "${DATA_DIR}/train_stage3.csv"
+    "${DATA_DIR}/val.csv"
+  )
+  for f in "${required_files[@]}"; do
+    if [[ ! -f "${f}" ]]; then
+      echo "[ERROR] USE_PREPARED_DATA=1 but required file is missing: ${f}" >&2
+      exit 1
+    fi
+  done
+  RUN_SCAN=0
+  RUN_SPLIT=0
+else
 # Resolve the canonical image-level index for this iteration.
 # 日常推荐优先级：
 #   1) INPUT_CSV：直接使用已经合并好的图片级 CSV，适合复现实验/调试。
@@ -313,7 +363,7 @@ elif [[ -n "${BASE_CSV}" ]]; then
   if [[ -z "${INCREMENT_MANIFEST}" ]]; then
     echo "[INFO] INCREMENT_MANIFEST is empty; copy BASE_CSV directly and skip merge."
     cp "${BASE_CSV}" "${DATA_DIR}/all_samples.csv"
-    python - "${DATA_DIR}/all_samples.csv" "${DATA_DIR}/all_samples_summary.yaml" <<'PY'
+    run_python - "${DATA_DIR}/all_samples.csv" "${DATA_DIR}/all_samples_summary.yaml" <<'PY'
 from pathlib import Path
 import sys
 import pandas as pd
@@ -341,7 +391,7 @@ PY
   else
     scanned_increment_csv="${DATA_DIR}/increment_from_manifest.csv"
     echo "[INFO] scan only new increment manifest: ${INCREMENT_MANIFEST}"
-    python src/tools/scan_manifest_to_csv.py \
+    run_python src/tools/scan_manifest_to_csv.py \
       --manifest "${INCREMENT_MANIFEST}" \
       --output_csv "${scanned_increment_csv}" \
       --summary_yaml "${DATA_DIR}/increment_from_manifest_summary.yaml"
@@ -358,14 +408,14 @@ PY
     if [[ "${MERGE_STRICT_PATHS}" == "1" ]]; then
       merge_args+=(--strict_paths)
     fi
-    python "$(find_script merge_dataset_index.py)" "${merge_args[@]}"
+    run_python "$(find_script merge_dataset_index.py)" "${merge_args[@]}"
   fi
   RUN_SCAN=0
 fi
 
 if [[ "${RUN_SCAN}" == "1" ]]; then
   echo "[1/9] Build canonical CSV from full manifest"
-  python src/tools/scan_manifest_to_csv.py \
+  run_python src/tools/scan_manifest_to_csv.py \
     --manifest "${MANIFEST}" \
     --output_csv "${DATA_DIR}/all_samples.csv" \
     --summary_yaml "${DATA_DIR}/all_samples_summary.yaml"
@@ -380,6 +430,7 @@ if [[ ! -f "${DATA_DIR}/all_samples.csv" ]]; then
   echo "        2) INPUT_CSV=/path/to/already_merged_index.csv"
   echo "        3) RUN_FULL_SCAN=1 MANIFEST=/path/to/full_manifest.yaml"
   exit 1
+fi
 fi
 
 if [[ "${RUN_SPLIT}" == "1" ]]; then
@@ -405,7 +456,7 @@ if [[ "${RUN_SPLIT}" == "1" ]]; then
     if [[ "${VAL_INCLUDE_HARD}" == "1" ]]; then split_args+=(--val_include_hard); fi
     if [[ -n "${HARD_CSV}" ]]; then split_args+=(--hard_csv "${HARD_CSV}"); fi
     if [[ -n "${REVIEWED_POOL_CSV}" ]]; then split_args+=(--reviewed_pool_csv "${REVIEWED_POOL_CSV}"); fi
-    python src/tools/build_full_seen_random_val.py "${split_args[@]}"
+    run_python src/tools/build_full_seen_random_val.py "${split_args[@]}"
   elif [[ "${SPLIT_MODE}" == "full_seen_heldout_val" ]]; then
     echo "[2/9] Build full-seen train + whole-source/generator held-out validation splits"
     split_args=(
@@ -425,8 +476,8 @@ if [[ "${RUN_SPLIT}" == "1" ]]; then
     if [[ -n "${FAKE_HOLDOUT_SOURCES}" ]]; then split_args+=(--fake_holdout_sources "${FAKE_HOLDOUT_SOURCES}"); fi
     if [[ "${AUTO_HOLDOUT_REAL_SOURCES}" == "1" ]]; then split_args+=(--auto_holdout_real_sources); fi
     if [[ "${AUTO_HOLDOUT_FAKE_GENERATORS}" == "1" ]]; then split_args+=(--auto_holdout_fake_generators); fi
-    python src/tools/build_full_seen_with_heldout_val.py "${split_args[@]}"
-    python - "${DATA_DIR}" <<'PY'
+    run_python src/tools/build_full_seen_with_heldout_val.py "${split_args[@]}"
+    run_python - "${DATA_DIR}" <<'PY'
 from pathlib import Path
 import pandas as pd
 import sys
@@ -454,7 +505,7 @@ PY
     split_args=(--input_csv "${DATA_DIR}/all_samples.csv" --output_dir "${DATA_DIR}" --preset "${PRESET}" --seed "${SEED}" --group_col "${GROUP_COL}")
     if [[ -n "${HOLDOUT_GENERATORS}" ]]; then split_args+=(--holdout_generators "${HOLDOUT_GENERATORS}"); fi
     if [[ -n "${HOLDOUT_SOURCES}" ]]; then split_args+=(--holdout_sources "${HOLDOUT_SOURCES}"); fi
-    python src/tools/make_small_splits.py "${split_args[@]}"
+    run_python src/tools/make_small_splits.py "${split_args[@]}"
   fi
 else
   echo "[2/9] Skip split"
@@ -476,7 +527,7 @@ if [[ "${RUN_STAGE1}" == "1" ]]; then
     warmstart "${STAGE1_INIT_CKPT}" "${STAGE1_WARM}"
     stage1_args+=(--resume "${STAGE1_WARM}")
   fi
-  ${TORCHRUN_CMD} --nproc_per_node="${NPROC}" src/train.py "${stage1_args[@]}"
+  run_torchrun src/train.py "${stage1_args[@]}"
 else
   echo "[3/9] Skip stage1"
 fi
@@ -486,7 +537,7 @@ if [[ "${RUN_STAGE2}" == "1" ]]; then
   echo "[4/9] Train stage2 from stage1 weights"
   STAGE2_WARM="${OUT_DIR}/warmstarts/stage1_to_stage2.pt"
   warmstart "${STAGE1_CKPT}" "${STAGE2_WARM}"
-  torchrun --nproc_per_node="${NPROC}" src/train.py --config "${STAGE2_CFG}" --resume "${STAGE2_WARM}"
+  run_torchrun src/train.py --config "${STAGE2_CFG}" --resume "${STAGE2_WARM}"
 else
   echo "[4/9] Skip stage2"
 fi
@@ -502,7 +553,7 @@ if [[ "${RUN_REPLAY}" == "1" ]]; then
     echo "[WARN] reviewed_pool.csv is empty; copy train_stage2.csv to train_stage3.csv"
     cp "${DATA_DIR}/train_stage2.csv" "${DATA_DIR}/train_stage3.csv"
   else
-    python src/tools/auto_replay.py --config "${EVAL_REPLAY_CFG}" --ckpt "${STAGE2_CKPT}" --candidate_csv "${DATA_DIR}/reviewed_pool.csv" --calib_csv "${DATA_DIR}/val.csv" --precision "${REPLAY_PRECISION:-0.98}" --output_buffer_csv "${DATA_DIR}/replay_buffer.csv" --base_train_csv "${DATA_DIR}/train_stage2.csv" --merged_output_csv "${DATA_DIR}/train_stage3.csv" --topk_real "${REPLAY_TOPK_REAL:-40000}" --topk_fake "${REPLAY_TOPK_FAKE:-40000}" --topk_uncertain "${REPLAY_TOPK_UNCERTAIN:-20000}" --max_buffer "${REPLAY_MAX_BUFFER:-200000}"
+    run_python src/tools/auto_replay.py --config "${EVAL_REPLAY_CFG}" --ckpt "${STAGE2_CKPT}" --candidate_csv "${DATA_DIR}/reviewed_pool.csv" --calib_csv "${DATA_DIR}/val.csv" --precision "${REPLAY_PRECISION:-0.98}" --output_buffer_csv "${DATA_DIR}/replay_buffer.csv" --base_train_csv "${DATA_DIR}/train_stage2.csv" --merged_output_csv "${DATA_DIR}/train_stage3.csv" --topk_real "${REPLAY_TOPK_REAL:-40000}" --topk_fake "${REPLAY_TOPK_FAKE:-40000}" --topk_uncertain "${REPLAY_TOPK_UNCERTAIN:-20000}" --max_buffer "${REPLAY_MAX_BUFFER:-200000}"
   fi
 else
   echo "[5/9] Skip replay"
@@ -517,7 +568,7 @@ if [[ "${RUN_STAGE3}" == "1" ]]; then
     make_cfg --base "${BASE_STAGE2_CONFIG}" --output "${STAGE3_CFG}" --set "seed=${SEED}" --set "output_dir=${OUT_DIR}/stage3" --set "data.train_csv=${DATA_DIR}/train_stage3.csv" --set "data.val_csv=${DATA_DIR}/val.csv" --set "model.pretrained_rgb=false" --set "model.pretrained_forensic=false" --set "optim.lr=${STAGE3_LR}" --set "train.epochs=${STAGE3_EPOCHS}"
     STAGE3_WARM="${OUT_DIR}/warmstarts/stage2_to_stage3.pt"
     warmstart "${STAGE2_CKPT}" "${STAGE3_WARM}"
-    torchrun --nproc_per_node="${NPROC}" src/train.py --config "${STAGE3_CFG}" --resume "${STAGE3_WARM}"
+    run_torchrun src/train.py --config "${STAGE3_CFG}" --resume "${STAGE3_WARM}"
     FINAL_CKPT="${OUT_DIR}/stage3/best.pt"
   fi
 else
@@ -530,7 +581,7 @@ if [[ "${RUN_EVAL}" == "1" ]]; then
   echo "[7/9] Evaluate final checkpoint"
   eval_args=(--ckpt "${FINAL_CKPT}" --base_config "${BASE_EVAL_CONFIG}" --data_dir "${DATA_DIR}" --output_dir "${EVAL_DIR}" --skip_missing --skip_empty --splits val=val.csv test_unseen=test_unseen.csv test_all=test_all.csv)
   if [[ -n "${DEVICE}" ]]; then eval_args+=(--device "${DEVICE}"); fi
-  python "$(find_script eval_suite.py)" "${eval_args[@]}"
+  run_python "$(find_script eval_suite.py)" "${eval_args[@]}"
 else
   echo "[7/9] Skip eval"
 fi
@@ -540,7 +591,7 @@ if [[ "${RUN_GATE}" == "1" ]]; then
   if [[ -n "${BASELINE_METRICS_DIR}" && -d "${BASELINE_METRICS_DIR}" ]]; then
     gate_args=(--candidate_dir "${METRICS_DIR}" --baseline_dir "${BASELINE_METRICS_DIR}" --gate "${GATE_CONFIG}" --out "${OUT_DIR}/gate_report.json")
     if [[ "${GATE_SOFT_FAIL}" == "1" ]]; then gate_args+=(--soft_fail); fi
-    python "$(find_script check_gate.py)" "${gate_args[@]}"
+    run_python "$(find_script check_gate.py)" "${gate_args[@]}"
   else
     echo "[WARN] BASELINE_METRICS_DIR is empty or missing; skip gate."
   fi
@@ -550,7 +601,7 @@ fi
 
 if [[ "${RUN_PACKAGE}" == "1" ]]; then
   echo "[9/9] Package release"
-  python "$(find_script package_release.py)" --iteration_id "${ITER_ID}" --ckpt "${FINAL_CKPT}" --output_dir "${OUT_DIR}/release" --configs_dir "${OUT_DIR}/configs" --metrics_dir "${METRICS_DIR}" --data_dir "${DATA_DIR}" --status candidate
+  run_python "$(find_script package_release.py)" --iteration_id "${ITER_ID}" --ckpt "${FINAL_CKPT}" --output_dir "${OUT_DIR}/release" --configs_dir "${OUT_DIR}/configs" --metrics_dir "${METRICS_DIR}" --data_dir "${DATA_DIR}" --status candidate
 else
   echo "[9/9] Skip package"
 fi

@@ -1,0 +1,1332 @@
+
+[2026-05-12T05:15:34.083480+00:00] INFO starting iteration iter_20260512_001
+??? Linux ? Windows ?????????????
+?????? Microsoft Store ??????:
+https://aka.ms/wslstore
+
+[2026-05-12T05:18:28.681902+00:00] INFO starting iteration iter_20260512_001
+??? Linux ? Windows ?????????????
+?????? Microsoft Store ??????:
+https://aka.ms/wslstore
+
+[2026-05-12T05:41:23.930477+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+W0512 13:41:27.446474 23832 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:697] [c10d] The client socket has failed to connect to [LAPTOP-H2M76F3P]:29500 (system error: 10049 - 在其上下文中，该请求的地址无效。).
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    Traceback (most recent call last):
+import timm  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+
+ModuleNotFoundError: No module named 'timm'Traceback (most recent call last):
+
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+    import timm
+ModuleNotFoundError: No module named 'timm'
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+W0512 13:42:12.709050 23832 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 13020 closing signal CTRL_C_EVENT
+W0512 13:42:12.709050 23832 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 25688 closing signal CTRL_C_EVENT
+W0512 13:42:12.710050 23832 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 22616 closing signal CTRL_C_EVENT
+W0512 13:42:12.926691 23832 torch\distributed\elastic\agent\server\api.py:741] Received Signals.SIGINT death signal, shutting down workers
+W0512 13:42:12.926691 23832 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 25688 closing signal SIGINT
+W0512 13:42:12.926691 23832 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 25688 closing signal SIGTERM
+W0512 13:42:12.927688 23832 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 22616 closing signal SIGTERM
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 733, in run
+    result = self._invoke_run(role)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 877, in _invoke_run
+    run_result = self._monitor_workers(self._worker_group)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\local_elastic_agent.py", line 316, in _monitor_workers
+    result = self._pcontext.wait(0)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 500, in wait
+    return self._poll()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 818, in _poll
+    self.close()  # terminate all running procs
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 541, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 861, in _close
+    handler.proc.wait(time_to_wait)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1486, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 76, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 27272 got signal: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 254, in launch_agent
+    result = agent.run()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 742, in run
+    self._shutdown(e.sigval)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\local_elastic_agent.py", line 296, in _shutdown
+    self._pcontext.close(death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 541, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 854, in _close
+    handler.close(death_sig=death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\subprocess_handler\subprocess_handler.py", line 72, in close
+    self.proc.send_signal(death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1561, in send_signal
+    raise ValueError("Unsupported signal: {}".format(sig))
+ValueError: Unsupported signal: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 883, in <module>
+    main()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 879, in main
+    run(args)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 870, in run
+    elastic_launch(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 279, in launch_agent
+    events.record(agent.get_event_failed())
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 752, in get_event_failed
+    return self._construct_event(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 810, in _construct_event
+    "hostname": _get_fq_hostname(),
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 391, in _get_fq_hostname
+    return socket.getfqdn(socket.gethostname())
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\socket.py", line 792, in getfqdn
+    hostname, aliases, ipaddrs = gethostbyaddr(name)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 76, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 27272 got signal: 2
+
+[2026-05-12T05:44:13.571688+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+W0512 13:44:16.424526 26324 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:697] [c10d] The client socket has failed to connect to [LAPTOP-H2M76F3P]:29500 (system error: 10049 - 在其上下文中，该请求的地址无效。).
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+W0512 13:44:31.614338 26324 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 22732 closing signal CTRL_C_EVENT
+E0512 13:44:31.683337 26324 torch\distributed\elastic\multiprocessing\api.py:826] failed (exitcode: 1) local_rank: 0 (pid: 2184) of binary: C:\Users\LENOVO\.conda\envs\pytorch\python.exe
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 883, in <module>
+    main()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 879, in main
+    run(args)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 870, in run
+    elastic_launch(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-12_13:44:31
+  host      : LAPTOP-H2M76F3P
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 4112)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-12_13:44:31
+  host      : LAPTOP-H2M76F3P
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 14712)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-12_13:44:31
+  host      : LAPTOP-H2M76F3P
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 24184)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-12_13:44:31
+  host      : LAPTOP-H2M76F3P
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 14252)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-12_13:44:31
+  host      : LAPTOP-H2M76F3P
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 22076)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-12_13:44:31
+  host      : LAPTOP-H2M76F3P
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 1288)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-12_13:44:31
+  host      : LAPTOP-H2M76F3P
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2184)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+
+[2026-05-12T05:46:11.344212+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+src/train.py: line 1: import: command not found
+src/train.py: line 2: import: command not found
+src/train.py: line 4: import: command not found
+src/train.py: line 5: import: command not found
+src/train.py: line 6: import: command not found
+src/train.py: line 7: import: command not found
+src/train.py: line 8: from: command not found
+src/train.py: line 9: from: command not found
+src/train.py: line 10: from: command not found
+src/train.py: line 12: from: command not found
+src/train.py: line 13: from: command not found
+src/train.py: line 14: from: command not found
+src/train.py: line 15: from: command not found
+src/train.py: line 16: from: command not found
+src/train.py: line 17: from: command not found
+src/train.py: line 20: syntax error near unexpected token `('
+src/train.py: line 20: `def parse_args():'
+
+[2026-05-12T05:48:32.101053+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+src/train.py: line 1: import: command not found
+src/train.py: line 2: import: command not found
+src/train.py: line 4: import: command not found
+src/train.py: line 5: import: command not found
+src/train.py: line 6: import: command not found
+src/train.py: line 7: import: command not found
+src/train.py: line 8: from: command not found
+src/train.py: line 9: from: command not found
+src/train.py: line 10: from: command not found
+src/train.py: line 12: from: command not found
+src/train.py: line 13: from: command not found
+src/train.py: line 14: from: command not found
+src/train.py: line 15: from: command not found
+src/train.py: line 16: from: command not found
+src/train.py: line 17: from: command not found
+src/train.py: line 20: syntax error near unexpected token `('
+src/train.py: line 20: `def parse_args():'
+
+[2026-05-12T05:55:58.942226+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+W0512 13:56:32.194335 22540 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:697] [c10d] The client socket has failed to connect to [LAPTOP-H2M76F3P]:29500 (system error: 10049 - 在其上下文中，该请求的地址无效。).
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+W0512 13:56:47.340373 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 9516 closing signal CTRL_C_EVENT
+W0512 13:56:47.346373 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 5400 closing signal CTRL_C_EVENT
+W0512 13:56:47.365374 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 26428 closing signal CTRL_C_EVENT
+W0512 13:56:47.381373 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 26668 closing signal CTRL_C_EVENT
+W0512 13:56:47.407374 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 13448 closing signal CTRL_C_EVENT
+W0512 13:56:47.414373 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 11696 closing signal CTRL_C_EVENT
+W0512 13:56:47.425374 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 504 closing signal CTRL_C_EVENT
+W0512 13:56:47.591372 22540 torch\distributed\elastic\agent\server\api.py:741] Received Signals.SIGINT death signal, shutting down workers
+W0512 13:56:47.591372 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 5400 closing signal SIGINT
+W0512 13:56:47.592372 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 5400 closing signal SIGTERM
+W0512 13:56:47.592372 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 26428 closing signal SIGTERM
+W0512 13:56:47.593372 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 26668 closing signal SIGTERM
+W0512 13:56:47.593372 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 13448 closing signal SIGTERM
+W0512 13:56:47.593372 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 11696 closing signal SIGTERM
+W0512 13:56:47.594372 22540 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 504 closing signal SIGTERM
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 733, in run
+    result = self._invoke_run(role)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 877, in _invoke_run
+    run_result = self._monitor_workers(self._worker_group)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\local_elastic_agent.py", line 316, in _monitor_workers
+    result = self._pcontext.wait(0)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 500, in wait
+    return self._poll()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 818, in _poll
+    self.close()  # terminate all running procs
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 541, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 861, in _close
+    handler.proc.wait(time_to_wait)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1486, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 76, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 13784 got signal: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 254, in launch_agent
+    result = agent.run()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 742, in run
+    self._shutdown(e.sigval)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\local_elastic_agent.py", line 296, in _shutdown
+    self._pcontext.close(death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 541, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 854, in _close
+    handler.close(death_sig=death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\subprocess_handler\subprocess_handler.py", line 72, in close
+    self.proc.send_signal(death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1561, in send_signal
+    raise ValueError("Unsupported signal: {}".format(sig))
+ValueError: Unsupported signal: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 883, in <module>
+    main()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 879, in main
+    run(args)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 870, in run
+    elastic_launch(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 279, in launch_agent
+    events.record(agent.get_event_failed())
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 752, in get_event_failed
+    return self._construct_event(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 810, in _construct_event
+    "hostname": _get_fq_hostname(),
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 391, in _get_fq_hostname
+    return socket.getfqdn(socket.gethostname())
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\socket.py", line 792, in getfqdn
+    hostname, aliases, ipaddrs = gethostbyaddr(name)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 76, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 13784 got signal: 2
+
+[2026-05-12T05:57:33.532942+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+W0512 13:57:37.011558 27276 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:697] [c10d] The client socket has failed to connect to [LAPTOP-H2M76F3P]:29500 (system error: 10049 - 在其上下文中，该请求的地址无效。).
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 15, in <module>
+    from models.safepp import build_model
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\models\safepp.py", line 3, in <module>
+    import timm
+ModuleNotFoundError: No module named 'timm'
+E0512 13:57:57.192885 27276 torch\distributed\elastic\multiprocessing\api.py:826] failed (exitcode: 1) local_rank: 0 (pid: 19892) of binary: C:\Users\LENOVO\.conda\envs\pytorch\python.exe
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 883, in <module>
+    main()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 879, in main
+    run(args)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 870, in run
+    elastic_launch(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 24764)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 13532)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 22392)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 26120)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 13136)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 5292)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 27084)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-12_13:57:57
+  host      : LAPTOP-H2M76F3P
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 19892)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+
+[2026-05-12T06:04:10.919838+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+W0512 14:04:14.978292 22956 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:697] [c10d] The client socket has failed to connect to [LAPTOP-H2M76F3P]:29500 (system error: 10049 - 在其上下文中，该请求的地址无效。).
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    main()
+      File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+    main()
+
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+W0512 14:05:00.165741 22956 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 26764 closing signal CTRL_C_EVENT
+W0512 14:05:00.166742 22956 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 23108 closing signal CTRL_C_EVENT
+W0512 14:05:00.166742 22956 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 21404 closing signal CTRL_C_EVENT
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 17, in <module>
+    from utils.metrics import binary_metrics, recall_at_precision, threshold_for_precision
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\utils\metrics.py", line 4, in <module>
+    from sklearn.metrics import average_precision_score, roc_auc_score, precision_recall_curve
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\__init__.py", line 6, in <module>
+    from . import cluster
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\cluster\__init__.py", line 28, in <module>
+    from ._unsupervised import (
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 21, in <module>
+    from ..pairwise import _VALID_METRICS, pairwise_distances, pairwise_distances_chunked
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\pairwise.py", line 46, in <module>
+    from ._pairwise_distances_reduction import ArgKmin
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\_pairwise_distances_reduction\__init__.py", line 97, in <module>
+    from ._dispatcher import (
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 456, in <module>
+    class ArgKminClassMode(BaseDistancesReductionDispatcher):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 483, in ArgKminClassMode
+    def compute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 17, in <module>
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 17, in <module>
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\utils\metrics.py", line 4, in <module>
+    from utils.metrics import binary_metrics, recall_at_precision, threshold_for_precision
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\utils\metrics.py", line 4, in <module>
+    from sklearn.metrics import average_precision_score, roc_auc_score, precision_recall_curve
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\__init__.py", line 6, in <module>
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\__init__.py", line 6, in <module>
+    from . import cluster
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\cluster\__init__.py", line 28, in <module>
+    from . import cluster
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\cluster\__init__.py", line 28, in <module>
+    from ._unsupervised import (
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 21, in <module>
+    from ..pairwise import _VALID_METRICS, pairwise_distances, pairwise_distances_chunked
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\metrics\pairwise.py", line 450, in <module>
+    "missing_values": [MissingValues(numeric_only=True)],
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\utils\_param_validation.py", line 650, in __init__
+    super().__init__()
+KeyboardInterrupt
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 733, in run
+    result = self._invoke_run(role)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 877, in _invoke_run
+    run_result = self._monitor_workers(self._worker_group)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\local_elastic_agent.py", line 316, in _monitor_workers
+    result = self._pcontext.wait(0)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 500, in wait
+    return self._poll()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 818, in _poll
+    self.close()  # terminate all running procs
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 541, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 861, in _close
+    handler.proc.wait(time_to_wait)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1486, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 76, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 8140 got signal: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\logging\__init__.py", line 1083, in emit
+    msg = self.format(record)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\logging\__init__.py", line 927, in format
+    return fmt.format(record)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\_logging\_internal.py", line 777, in format
+    f"{os.path.relpath(record.pathname, os.path.dirname(os.path.dirname(torch.__file__)))}:"
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\ntpath.py", line 718, in relpath
+    return join(*rel_list)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\ntpath.py", line 92, in join
+    p_drive, p_path = splitdrive(p)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\ntpath.py", line 170, in splitdrive
+    if normp[1:2] == colon:
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 76, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 8140 got signal: 2
+Call stack:
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 883, in <module>
+    main()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 879, in main
+    run(args)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 870, in run
+    elastic_launch(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 254, in launch_agent
+    result = agent.run()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 741, in run
+    log.warning("Received %s death signal, shutting down workers", e.sigval)
+Message: 'Received %s death signal, shutting down workers'
+Arguments: (<Signals.SIGINT: 2>,)
+W0512 14:05:28.293334 22956 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 23108 closing signal SIGINT
+W0512 14:05:28.294334 22956 torch\distributed\elastic\multiprocessing\api.py:851] Sending process 23108 closing signal SIGTERM
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 733, in run
+    result = self._invoke_run(role)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 877, in _invoke_run
+    run_result = self._monitor_workers(self._worker_group)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\local_elastic_agent.py", line 316, in _monitor_workers
+    result = self._pcontext.wait(0)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 500, in wait
+    return self._poll()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 818, in _poll
+    self.close()  # terminate all running procs
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 541, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 861, in _close
+    handler.proc.wait(time_to_wait)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1486, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 76, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 8140 got signal: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 883, in <module>
+    main()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 879, in main
+    run(args)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 870, in run
+    elastic_launch(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 254, in launch_agent
+    result = agent.run()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\metrics\api.py", line 123, in wrapper
+    result = f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\api.py", line 742, in run
+    self._shutdown(e.sigval)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\agent\server\local_elastic_agent.py", line 296, in _shutdown
+    self._pcontext.close(death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 541, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\api.py", line 854, in _close
+    handler.close(death_sig=death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\subprocess_handler\subprocess_handler.py", line 72, in close
+    self.proc.send_signal(death_sig)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\subprocess.py", line 1561, in send_signal
+    raise ValueError("Unsupported signal: {}".format(sig))
+ValueError: Unsupported signal: 2
+
+[2026-05-12T06:06:59.835021+00:00] INFO starting iteration iter_20260512_001
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+W0512 14:07:02.921917 25760 torch\distributed\elastic\multiprocessing\redirects.py:27] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:697] [c10d] The client socket has failed to connect to [LAPTOP-H2M76F3P]:29500 (system error: 10049 - 在其上下文中，该请求的地址无效。).
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 32, in setup_distributed
+    torch.cuda.set_device(local_rank)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\cuda\__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\distributed_c10d.py:613: UserWarning: Attempted to get default timeout for nccl backend, but NCCL support is not compiled
+  warnings.warn("Attempted to get default timeout for nccl backend, but NCCL support is not compiled")
+[W socket.cpp:697] [c10d] The client socket has failed to connect to [LAPTOP-H2M76F3P]:29500 (system error: 10049 - 在其上下文中，该请求的地址无效。).
+Traceback (most recent call last):
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 235, in <module>
+    main()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 100, in main
+    distributed, rank, world_size, local_rank = setup_distributed()
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 33, in setup_distributed
+    dist.init_process_group(backend='nccl', init_method='env://')
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\c10d_logger.py", line 75, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\c10d_logger.py", line 89, in wrapper
+    func_return = func(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\distributed_c10d.py", line 1312, in init_process_group
+    default_pg, _ = _new_process_group_helper(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\distributed_c10d.py", line 1513, in _new_process_group_helper
+    raise RuntimeError("Distributed package doesn't have NCCL built in")
+RuntimeError: Distributed package doesn't have NCCL built in
+E0512 14:07:28.041024 25760 torch\distributed\elastic\multiprocessing\api.py:826] failed (exitcode: 1) local_rank: 0 (pid: 5940) of binary: C:\Users\LENOVO\.conda\envs\pytorch\python.exe
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 883, in <module>
+    main()
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 879, in main
+    run(args)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\run.py", line 870, in run
+    elastic_launch(
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\distributed\launcher\api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 24824)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 26256)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 16636)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3396)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 26180)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 4396)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 25188)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-12_14:07:28
+  host      : LAPTOP-H2M76F3P
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 5940)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+
+[2026-05-12T06:11:37.335544+00:00] INFO starting iteration iter_20260512_001
+[WARN] NPROC=8 exceeds visible CUDA devices=1; use NPROC=1
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\utils\data\dataloader.py:558: UserWarning: This DataLoader will create 12 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\LENOVO\.cache\huggingface\hub\models--timm--convnext_tiny.fb_in22k_ft_in1k. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 17, in <module>
+    from utils.metrics import binary_metrics, recall_at_precision, threshold_for_precision
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\utils\metrics.py", line 4, in <module>
+    from sklearn.metrics import average_precision_score, roc_auc_score, precision_recall_curve
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\__init__.py", line 73, in <module>
+    from .base import clone  # noqa: E402
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\base.py", line 19, in <module>
+    from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\utils\__init__.py", line 15, in <module>
+    from ._chunking import gen_batches, gen_even_slices
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\utils\_chunking.py", line 11, in <module>
+    from ._param_validation import Interval, validate_params
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\utils\_param_validation.py", line 17, in <module>
+    from .validation import _is_arraylike_not_scalar
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\utils\validation.py", line 21, in <module>
+    from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\utils\_array_api.py", line 17, in <module>
+    from .fixes import parse_version
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\sklearn\utils\fixes.py", line 17, in <module>
+    import scipy.stats
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\scipy\stats\__init__.py", line 606, in <module>
+    from ._stats_py import *
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\scipy\stats\_stats_py.py", line 49, in <module>
+    from . import distributions
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\scipy\stats\distributions.py", line 10, in <module>
+    from . import _continuous_distns
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\scipy\stats\_continuous_distns.py", line 33, in <module>
+    import scipy.stats._boost as _boost
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\scipy\stats\_boost\__init__.py", line 1, in <module>
+    from scipy.stats._boost.beta_ufunc import (
+ImportError: DLL load failed while importing beta_ufunc: 页面文件太小，无法完成操作。
+
+[2026-05-12T06:38:39.415824+00:00] INFO starting iteration iter_20260512_001
+[WARN] NPROC=8 exceeds visible CUDA devices=1; use NPROC=1
+[INFO] project root: /g/shixi/May/code/syn_image_detach/safepp_pytorch
+[INFO] iteration : iter_20260512_001
+[INFO] split mode: full_seen_random_val
+[INFO] train plan: hard_in_stage2
+[INFO] data dir  : G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001
+[INFO] out dir   : G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001
+[INFO] base csv  : /ai_paas_jf/pangqs/AIGC/safepp_pytorch_v2.0/src/data/iterations/20260507_093541/all_samples.csv
+[1/9] Use prepared data directory and skip merge/split
+[2/9] Skip split
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage1.yaml
+[OK] wrote runtime config: G:\shixi\May\code\syn_image_detach\safepp_pytorch\outputs\iterations\iter_20260512_001\configs\stage2.yaml
+[3/9] Train stage1
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\torch\utils\data\dataloader.py:558: UserWarning: This DataLoader will create 12 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\pytorch_wavelets\dtcwt\coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\multiprocessing\spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "G:\shixi\May\code\syn_image_detach\safepp_pytorch\src\train.py", line 4, in <module>
+    import numpy as np
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\numpy\_core\__init__.py", line 23, in <module>
+    from . import multiarray
+  File "C:\Users\LENOVO\.conda\envs\pytorch\lib\site-packages\numpy\_core\multiarray.py", line 12, in <module>
+    from ._multiarray_umath import *  # noqa: F403
+MemoryError

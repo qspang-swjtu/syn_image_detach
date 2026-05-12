@@ -1,0 +1,10 @@
+{
+  "iterationId": "iter_20260512_001",
+  "status": "failed",
+  "pid": 25220,
+  "startedAt": "2026-05-12T06:38:39.418684+00:00",
+  "currentStage": "stage1_train",
+  "progress": 0,
+  "finishedAt": "2026-05-12T06:40:51.049387+00:00",
+  "errorMessage": "后台进程已退出，请查看 run.log。"
+}

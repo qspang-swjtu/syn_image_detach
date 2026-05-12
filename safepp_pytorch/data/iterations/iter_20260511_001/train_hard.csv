@@ -1,0 +1,68 @@
+path,label,source,dataset,domain,generator,split_hint,sample_weight,is_hard_negative,group_level,group_token,group_id,added_iter,is_collected_hard
+G:\shixi\April\test\dataset_futuristic_city\images\00000_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_49248c0f6632.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\dataset_futuristic_city\images\00001_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_f7703f8e20e0.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\dataset_futuristic_city\images\00002_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_d7c97abf2223.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\dataset_futuristic_city\images\00003_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_32c55a15bc4e.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\dataset_futuristic_city\images\00004_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_014bfa6e323c.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\1776911240309-k054r1.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\1776911250039-d6st61.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\1776911266532-9aib9z.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\45e12ea3-f4bd-4064-a1c1-dbb64e5c050d.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\80df12bf-ceb3-4c52-90d2-838e5f1f4e7f.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\81632741-8172-45c1-8a75-b1f3bca4b7df.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\apple-park-tim-cook-keynote.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月22日 14_41_13.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月22日 14_53_09.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月22日 15_10_35.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_40_48.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_42_20.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_44_27.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_47_34.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_51_39.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 10_20_59.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 10_24_54.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 11_03_24.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\de181d96-b17c-4c90-aa39-31a9f0297658.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\gpt-image-2-vs-nano-banana-pro-4.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\model.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\OIF-C.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\sample.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\总体设计图.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\流程2.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\gpt image2\示意图.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00002_0ea1cdf826aa.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00003_51ee9acceb4f.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00004_652d96c39259.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00005_ba550a501d8a.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00008_58ffdec7a18b.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00010_7db4d86af9bd.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00012_f3ce40a01551.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00013_d8be2d3e9725.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00014_8665a94c7386.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00021_eb7cda23e5a1.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00022_fcb90479aa2c.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00024_617c289d06c3.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00028_5726fd75c318.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00029_a947975c1316.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00030_e4713e3b876c.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00031_acf1043a2dd9.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00032_6bbb0be28893.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00033_271841ee118b.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\page_images\images\00034_be6dd5bd996e.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260511_001,1
+G:\shixi\April\test\图片1.png,1,hard,collected,photo,gpt,hard,3.0,1,1,test,hard:test,iter_20260511_001,1
+G:\shixi\April\test\图片2.png,1,hard,collected,photo,gpt,hard,3.0,1,1,test,hard:test,iter_20260511_001,1
+G:\shixi\April\test\搜集\28bbd243a9e8a41b9e60534c2a30a41c510059497.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\2e3c40e7d99a8cc63fcc4f326cf80b541778800963 (1).png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\488aaf9e43127b1b6ed892d0f02feb0d3537120757025697.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\49f0e37c6bcbfbb6a117acf8d063bcaa403879014.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\55d678c6de57d82210d91583cace106c599265427.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\6d7bff2b27f7c2bc9bb584db9f43343b289351363.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\736e98fba3794f01f6ee717a9da589873494380293851471.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\7581dc7f8a5b6d302524295b86633bad1354835581.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\7925624dcc38c9c85ae0646a1f0d884c39689297.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\a2598ee5580159433783959ea6615db91281174497.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\a2a2667c2a98055f59f76837c3d34f2f403879014.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\d428030c8960aedacf7a34eccd7ab475647316973.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\efa4342b544746d0fe4ecdc3ec3b74043537120757025697.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\f5bd91d2042b0ae637e6321697f993e42080150725.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1
+G:\shixi\April\test\搜集\f61656e0a9b5e9977afad80cfa903d9f484973240.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260511_001,1

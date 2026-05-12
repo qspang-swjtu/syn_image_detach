@@ -1,0 +1,18 @@
+train_sampler:
+  mode: source_balanced
+  group_by:
+  - source
+  - label
+  alpha: 1.0
+  num_groups: 3
+  top_groups:
+    genimage_fake|1: 90
+    satellite_fake|1: 52
+    chameleon_fake|1: 50
+  top_sources:
+    genimage_fake: 90
+    satellite_fake: 52
+    chameleon_fake: 50
+  hard_negative_boost: 1.0
+  weight_min: 0.011111111111111112
+  weight_max: 0.02

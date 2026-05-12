@@ -1,0 +1,260 @@
+path,label,source,dataset,domain,generator,split_hint,sample_weight,is_hard_negative,group_level,group_token,group_id,added_iter,is_collected_hard
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/m1FSEVsNOdk67xlzQIVXOg.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_031,satellite_fake:bucket_031,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/588_midjourney_0.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_037,genimage_fake:bucket_037,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/6292f6bd-42fa-4b5a-88b2-b3b2fbc421a9.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_036,chameleon_fake:bucket_036,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_00_087_vqdm_00097.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_107,genimage_fake:bucket_107,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/KQeerj9fYJa.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_097,satellite_fake:bucket_097,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/27ce2403-aaee-42ab-84bd-1cac9ac6194b.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_103,chameleon_fake:bucket_103,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.88047413,-87.68609758_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_058,satellite_fake:bucket_058,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/364_wukong_image75.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_021,genimage_fake:bucket_021,base,0
+G:\shixi\April\test\page_images\images\00004_652d96c39259.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_07_787_vqdm_00097.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_083,genimage_fake:bucket_083,base,0
+G:\shixi\April\test\page_images\images\00010_7db4d86af9bd.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/a8d02bbb-b4a6-4e91-8976-e1588d18c918.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_030,chameleon_fake:bucket_030,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/f5dcbbfc-511c-452c-a9b5-4eeb13ed1e34.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_124,chameleon_fake:bucket_124,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_07_748_vqdm_00107.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_073,genimage_fake:bucket_073,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/c516c3d8-5608-4a62-a5d9-7c23f4578c5b.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_053,chameleon_fake:bucket_053,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/d8167bc7-176d-413f-9b0c-6e5a5503ee9c.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_054,chameleon_fake:bucket_054,base,0
+G:\shixi\April\test\gpt image2\总体设计图.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_08_803_vqdm_00081.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_082,genimage_fake:bucket_082,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.87625310,-87.67408153_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_053,satellite_fake:bucket_053,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 10_20_59.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/232_wukong_image183.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_027,genimage_fake:bucket_027,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/077_biggan_00140.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_079,genimage_fake:bucket_079,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/6f99026b-bae3-4076-8226-2670d47395e2.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_114,chameleon_fake:bucket_114,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_08_826_glide_00066.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_044,genimage_fake:bucket_044,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/3cd0348e-51b4-462b-a853-6a0126255845.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_092,chameleon_fake:bucket_092,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/a657a561-8572-49f8-a744-0b15063fe00a.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_014,chameleon_fake:bucket_014,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/323_sdv4_00096.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_018,genimage_fake:bucket_018,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/f0850c2d-80ee-47f3-8ac5-7498e3a9553c.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_056,chameleon_fake:bucket_056,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/862_adm_105.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_002,genimage_fake:bucket_002,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/gkcbDtwdH86ErkqOA2jdhA_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_007,satellite_fake:bucket_007,base,0
+G:\shixi\April\test\搜集\736e98fba3794f01f6ee717a9da589873494380293851471.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/108_midjourney_114.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_044,genimage_fake:bucket_044,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/22e27c53-275a-4d55-976b-5912987fcd6b.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_120,chameleon_fake:bucket_120,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/096_sdv4_00163.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_040,genimage_fake:bucket_040,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/RJllg8rOxZaaWZRyS8MmWw.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_106,satellite_fake:bucket_106,base,0
+G:\shixi\April\test\gpt image2\de181d96-b17c-4c90-aa39-31a9f0297658.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/8df9bb7c-75ee-4928-a4fe-a93e3890bb06.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_053,chameleon_fake:bucket_053,base,0
+G:\shixi\April\test\gpt image2\apple-park-tim-cook-keynote.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0042470_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_112,satellite_fake:bucket_112,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/54b6ea06-4bfd-451b-9c6f-4f5c4d779534.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_011,chameleon_fake:bucket_011,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_05_586_glide_00070.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_100,genimage_fake:bucket_100,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/d04ade33-81fb-46de-89fa-bf965af00e72.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_112,chameleon_fake:bucket_112,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/714cd59e-13b8-4c36-93e0-4e656b936c07.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_013,chameleon_fake:bucket_013,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_05_554_vqdm_00049.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_121,genimage_fake:bucket_121,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/882_adm_134.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_097,genimage_fake:bucket_097,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.86909316,-87.67873744_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_052,satellite_fake:bucket_052,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/wjRke5ay0qdSv5X3qJIWuA_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_001,satellite_fake:bucket_001,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/774_adm_112.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_036,genimage_fake:bucket_036,base,0
+G:\shixi\April\test\page_images\images\00002_0ea1cdf826aa.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\gpt image2\gpt-image-2-vs-nano-banana-pro-4.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/779_sdv4_00024.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_021,genimage_fake:bucket_021,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_06_619_glide_00187.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_030,genimage_fake:bucket_030,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/fde661bc-8b79-4b6c-97c4-d8c1c26763e4.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_026,chameleon_fake:bucket_026,base,0
+G:\shixi\April\test\page_images\images\00008_58ffdec7a18b.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/872_wukong_image1.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_008,genimage_fake:bucket_008,base,0
+G:\shixi\April\test\gpt image2\OIF-C.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0006583_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_022,satellite_fake:bucket_022,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/ae71ca3b-7f3b-4dfd-ad7a-a116fbe72cec.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_038,chameleon_fake:bucket_038,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.88174613,-87.65099491_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_094,satellite_fake:bucket_094,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/866_biggan_00017.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_053,genimage_fake:bucket_053,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/8ec34a95-dff1-4ae8-9bcb-bd4cdee91e2e.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_091,chameleon_fake:bucket_091,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/tv2lt9V.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_057,satellite_fake:bucket_057,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/2UKyKGoDeZIIzF7VPAJC1g_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_069,satellite_fake:bucket_069,base,0
+G:\shixi\April\test\page_images\images\00003_51ee9acceb4f.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/680f05c9-9b60-4979-a3f0-8f43799963a6.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_051,chameleon_fake:bucket_051,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/YvjgFaZK3zmWaSiPWyf1iw_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_094,satellite_fake:bucket_094,base,0
+G:\shixi\April\test\gpt image2\45e12ea3-f4bd-4064-a1c1-dbb64e5c050d.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/756_wukong_image123.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_007,genimage_fake:bucket_007,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/536_sdv4_00048.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_047,genimage_fake:bucket_047,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/432_biggan_00106.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_018,genimage_fake:bucket_018,base,0
+G:\shixi\April\test\gpt image2\sample.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_06_658_vqdm_00075.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_098,genimage_fake:bucket_098,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/752_midjourney_83.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_041,genimage_fake:bucket_041,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/fce018b1-c54e-4baf-a579-ae86ce8fd22a.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_077,chameleon_fake:bucket_077,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/5073f1ba-d177-4075-8711-fd8ac5958463.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_115,chameleon_fake:bucket_115,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/800_wukong_image16.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_020,genimage_fake:bucket_020,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.87953896,-87.66685106_2019-08_DDNN5XrMSMwZTbgkPcfv5g_d1_z3_fake_B.png",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_030,satellite_fake:bucket_030,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_04_497_vqdm_00178.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_081,genimage_fake:bucket_081,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/721_adm_50.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_025,genimage_fake:bucket_025,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/299_adm_42.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_003,genimage_fake:bucket_003,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/335_adm_69.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_031,genimage_fake:bucket_031,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/8ae54cc4-2a1b-412c-96ec-fc0e3a0eb9ff.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_095,chameleon_fake:bucket_095,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/849_biggan_00152.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_048,genimage_fake:bucket_048,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/1b17fae8-a4c5-4f55-b4df-8405d4fe25f1.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_121,chameleon_fake:bucket_121,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 10_24_54.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/9ac98a80-2143-4096-864d-ff1d914411e3.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_119,chameleon_fake:bucket_119,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/44ec335b-3509-4057-b70e-aada835d211e.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_010,chameleon_fake:bucket_010,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/21e7e005-8f24-4803-ba56-b432f721f950.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_074,chameleon_fake:bucket_074,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/546_adm_59.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_084,genimage_fake:bucket_084,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/157_biggan_00063.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_041,genimage_fake:bucket_041,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/06eab5b3-0c5e-472b-bcea-b1383bf611d7.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_080,chameleon_fake:bucket_080,base,0
+G:\shixi\April\test\gpt image2\流程2.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/9a81652e-b4a7-4ddf-a82c-d78c2f29658c.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_016,chameleon_fake:bucket_016,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/061_biggan_00188.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_097,genimage_fake:bucket_097,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/YrWodvn3PzDv2D-LPjsOkw_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_089,satellite_fake:bucket_089,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/416_adm_45.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_034,genimage_fake:bucket_034,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/413_wukong_image4.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_102,genimage_fake:bucket_102,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/5640f688-46e1-430a-9508-7d3b5b33ec32.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_007,chameleon_fake:bucket_007,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/205_adm_9.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_098,genimage_fake:bucket_098,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/xkDT4ELMXUBPZpsnx-b7ew.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_035,satellite_fake:bucket_035,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/751_wukong_image18.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_026,genimage_fake:bucket_026,base,0
+G:\shixi\April\test\page_images\images\00012_f3ce40a01551.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_02_214_glide_00062.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_005,genimage_fake:bucket_005,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/fQLM3Q0fdIbFKfD-p3DqfA_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_077,satellite_fake:bucket_077,base,0
+G:\shixi\April\test\搜集\7581dc7f8a5b6d302524295b86633bad1354835581.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0007022_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_086,satellite_fake:bucket_086,base,0
+G:\shixi\April\test\dataset_futuristic_city\images\00003_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_32c55a15bc4e.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_07_773_glide_00078.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_035,genimage_fake:bucket_035,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/121_adm_80.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_054,genimage_fake:bucket_054,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0025981_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_070,satellite_fake:bucket_070,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/9_wukong_image14.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_073,genimage_fake:bucket_073,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/3d058416-7968-41f0-a25a-9e583a66fa17.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_050,chameleon_fake:bucket_050,base,0
+G:\shixi\April\test\page_images\images\00022_fcb90479aa2c.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\dataset_futuristic_city\images\00000_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_49248c0f6632.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/748_sdv4_00047.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_093,genimage_fake:bucket_093,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.85660216,-87.65822670_2019-07_jPzS8Ja8cBxMZ1B-TSd4hg_d0_z3_fake_B.png",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_099,satellite_fake:bucket_099,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月22日 15_10_35.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+G:\shixi\April\test\page_images\images\00013_d8be2d3e9725.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/323_midjourney_166.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_072,genimage_fake:bucket_072,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.88625941,-87.66139902_2019-08_r1aG0M1icsyqLAnaZd6SSQ_d182_z3_fake_B.png",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_062,satellite_fake:bucket_062,base,0
+G:\shixi\April\test\dataset_futuristic_city\images\00002_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_d7c97abf2223.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\搜集\f5bd91d2042b0ae637e6321697f993e42080150725.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_51_39.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+G:\shixi\April\test\搜集\efa4342b544746d0fe4ecdc3ec3b74043537120757025697.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+G:\shixi\April\test\page_images\images\00014_8665a94c7386.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/226_midjourney_127.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_010,genimage_fake:bucket_010,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_00_096_vqdm_00123.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_049,genimage_fake:bucket_049,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/84a46a94-e398-4132-822e-37a32f73128c.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_106,chameleon_fake:bucket_106,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/902_sdv4_00078.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_004,genimage_fake:bucket_004,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_09_974_glide_00043.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_001,genimage_fake:bucket_001,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/6af103ea-0879-474d-9252-18c7b9a3d70a.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_004,chameleon_fake:bucket_004,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/e73594c8-8f9f-4d9c-9b58-561a3c415c46.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_004,chameleon_fake:bucket_004,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_03_374_glide_00134.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_064,genimage_fake:bucket_064,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.89106787,-87.65785973_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_071,satellite_fake:bucket_071,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_09_965_glide_00044.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_114,genimage_fake:bucket_114,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/537_sdv4_00175.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_033,genimage_fake:bucket_033,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/263_biggan_00122.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_069,genimage_fake:bucket_069,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/b2270469-c872-4c85-bd4f-7be66ad60c51.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_043,chameleon_fake:bucket_043,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/229_adm_72.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_000,genimage_fake:bucket_000,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/f56d83c1-6a90-4ab2-bde3-f1f491b6d784.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_109,chameleon_fake:bucket_109,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_09_942_glide_00063.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_019,genimage_fake:bucket_019,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.87606520,-87.68978705_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_035,satellite_fake:bucket_035,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_08_893_glide_00183.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_043,genimage_fake:bucket_043,base,0
+G:\shixi\April\test\page_images\images\00024_617c289d06c3.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\page_images\images\00028_5726fd75c318.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/505_sdv4_00179.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_104,genimage_fake:bucket_104,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/690e8fc1-90d4-4bde-921b-be03a8dae517.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_033,chameleon_fake:bucket_033,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/22ed1c4b-fa1e-4ac6-a1a0-39cae81fbb4a.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_024,chameleon_fake:bucket_024,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/4fda9f48-7268-4208-a5b0-aa2ce6a595e1.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_072,chameleon_fake:bucket_072,base,0
+G:\shixi\April\test\gpt image2\81632741-8172-45c1-8a75-b1f3bca4b7df.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0043040.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_108,satellite_fake:bucket_108,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/0f669a88-0303-4826-bf18-0f056f11c451.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_081,chameleon_fake:bucket_081,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/97_adm_128.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_003,genimage_fake:bucket_003,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/fc819b6e-4002-4189-91ec-5ff33fc47920.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_087,chameleon_fake:bucket_087,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/y-UmyjB7PEqJOFL9ESYvig_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_087,satellite_fake:bucket_087,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/579_midjourney_4.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_025,genimage_fake:bucket_025,base,0
+G:\shixi\April\test\page_images\images\00032_6bbb0be28893.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\搜集\f61656e0a9b5e9977afad80cfa903d9f484973240.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_07_706_glide_00169.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_032,genimage_fake:bucket_032,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/791_adm_57.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_071,genimage_fake:bucket_071,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.86028468,-87.62101584_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_120,satellite_fake:bucket_120,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/umG4wlEQMmyeCAg0JmiCHQ.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_122,satellite_fake:bucket_122,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/797_midjourney_98.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_114,genimage_fake:bucket_114,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/449_adm_191.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_073,genimage_fake:bucket_073,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.88353158,-87.68165198_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_105,satellite_fake:bucket_105,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/677_adm_190.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_015,genimage_fake:bucket_015,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/242_sdv4_00002.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_074,genimage_fake:bucket_074,base,0
+G:\shixi\April\test\gpt image2\model.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/VQDM_1000_200_00_084_vqdm_00186.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_028,genimage_fake:bucket_028,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/163_wukong_image137.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_116,genimage_fake:bucket_116,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/342_adm_131.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_018,genimage_fake:bucket_018,base,0
+G:\shixi\April\test\搜集\a2598ee5580159433783959ea6615db91281174497.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.85768649,-87.67381385_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_119,satellite_fake:bucket_119,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/66_adm_184.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_122,genimage_fake:bucket_122,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 11_03_24.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+G:\shixi\April\test\搜集\a2a2667c2a98055f59f76837c3d34f2f403879014.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/0520b642-7b0d-430d-8344-d73cad47428f.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_023,chameleon_fake:bucket_023,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/GmL4o3gytkXn.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_003,satellite_fake:bucket_003,base,0
+G:\shixi\April\test\page_images\images\00030_e4713e3b876c.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/oIx0aWrk1wZd.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_109,satellite_fake:bucket_109,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/38896977-9956-449d-9ea1-04fd1eb8c4b5.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_120,chameleon_fake:bucket_120,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/44_midjourney_57.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_062,genimage_fake:bucket_062,base,0
+G:\shixi\April\test\图片1.png,1,hard,collected,photo,gpt,hard,3.0,1,1,test,hard:test,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/0b733bff-f4a7-4ac8-b1b7-9367f040a4e2.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_036,chameleon_fake:bucket_036,base,0
+G:\shixi\April\test\page_images\images\00005_ba550a501d8a.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/g6g6EivExIawir61bRemwA.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_026,satellite_fake:bucket_026,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/088_sdv4_00013.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_081,genimage_fake:bucket_081,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_47_34.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_02_282_glide_00055.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_066,genimage_fake:bucket_066,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0008578_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_071,satellite_fake:bucket_071,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/467_midjourney_39.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_052,genimage_fake:bucket_052,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/hedtjW6Atj.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_048,satellite_fake:bucket_048,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.88772827,-87.65591081_2019-08_k369AuJi4ISWObjv-Eo-EQ_d272_z3_fake_B.png",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_047,satellite_fake:bucket_047,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_44_27.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/308_wukong_image147.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_114,genimage_fake:bucket_114,base,0
+G:\shixi\April\test\page_images\images\00031_acf1043a2dd9.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_42_20.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+G:\shixi\April\test\搜集\7925624dcc38c9c85ae0646a1f0d884c39689297.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+G:\shixi\April\test\搜集\d428030c8960aedacf7a34eccd7ab475647316973.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/djyktyt-h4TPkMeCPQxp3g_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_122,satellite_fake:bucket_122,base,0
+G:\shixi\April\test\page_images\images\00034_be6dd5bd996e.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0DxSVUFYi5a1BeM1hl8ZSQ_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_035,satellite_fake:bucket_035,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/2511053a-901e-4d4b-9684-6660933c71cc.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_076,chameleon_fake:bucket_076,base,0
+G:\shixi\April\test\gpt image2\1776911266532-9aib9z.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_09_985_glide_00037.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_071,genimage_fake:bucket_071,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/PXZJdjuhHo49RFGJoM70Xw_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_109,satellite_fake:bucket_109,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/797_wukong_image137.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_070,genimage_fake:bucket_070,base,0
+G:\shixi\April\test\搜集\2e3c40e7d99a8cc63fcc4f326cf80b541778800963 (1).png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+G:\shixi\April\test\搜集\6d7bff2b27f7c2bc9bb584db9f43343b289351363.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_04_460_glide_00170.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_015,genimage_fake:bucket_015,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0015711.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_010,satellite_fake:bucket_010,base,0
+G:\shixi\April\test\page_images\images\00033_271841ee118b.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\搜集\55d678c6de57d82210d91583cace106c599265427.png,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/f0a8ca9f-72b4-4d95-a224-f908b1decef6.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_120,chameleon_fake:bucket_120,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/168_adm_147.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_064,genimage_fake:bucket_064,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/e15aa5b1-419a-4b0d-bd17-e4045e473ae4.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_044,chameleon_fake:bucket_044,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.89104559,-87.66265621_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_091,satellite_fake:bucket_091,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/6v5jiZIrze-2sEErv5qqiA_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_074,satellite_fake:bucket_074,base,0
+G:\shixi\April\test\page_images\images\00021_eb7cda23e5a1.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\搜集\28bbd243a9e8a41b9e60534c2a30a41c510059497.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.89055844,-87.66557705_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_040,satellite_fake:bucket_040,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/381_midjourney_120.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_013,genimage_fake:bucket_013,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/72e3356c-f1a6-47d0-856d-3019fe26396e.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_032,chameleon_fake:bucket_032,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/ef96d9a5-099f-45e2-9665-fe3246edcf62.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_030,chameleon_fake:bucket_030,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/403e07ae-406d-4591-854a-2856e31011a2.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_055,chameleon_fake:bucket_055,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0000035_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_056,satellite_fake:bucket_056,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/959_sdv4_00023.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_051,genimage_fake:bucket_051,base,0
+G:\shixi\April\test\page_images\images\00029_a947975c1316.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_07_725_glide_00153.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_075,genimage_fake:bucket_075,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月22日 14_53_09.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+G:\shixi\April\test\图片2.png,1,hard,collected,photo,gpt,hard,3.0,1,1,test,hard:test,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/748_wukong_image122.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_001,genimage_fake:bucket_001,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/870_biggan_00017.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_125,genimage_fake:bucket_125,base,0
+G:\shixi\April\test\搜集\488aaf9e43127b1b6ed892d0f02feb0d3537120757025697.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+G:\shixi\April\test\dataset_futuristic_city\images\00004_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_014bfa6e323c.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\gpt image2\示意图.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+G:\shixi\April\test\gpt image2\1776911250039-d6st61.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_05_520_glide_00176.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_093,genimage_fake:bucket_093,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/chameleon/fake/24d1714d-55b1-4352-8956-6e50d0091a73.jpg,1,chameleon_fake,chameleon,root,unknown_fake,seen,1.0,0,1,bucket_049,chameleon_fake:bucket_049,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/3Rn-fdGGUAu3c9CGlBcLgw.jpg,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_020,satellite_fake:bucket_020,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0025995_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_116,satellite_fake:bucket_116,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/624_biggan_00190.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_006,genimage_fake:bucket_006,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.89416375,-87.67343474_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_020,satellite_fake:bucket_020,base,0
+G:\shixi\April\test\搜集\49f0e37c6bcbfbb6a117acf8d063bcaa403879014.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,搜集,hard:搜集,iter_20260512_001,1
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.85301036,-87.68186539_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_034,satellite_fake:bucket_034,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_02_206_glide_00095.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_052,genimage_fake:bucket_052,base,0
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月24日 09_40_48.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/245_sdv4_00185.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_037,genimage_fake:bucket_037,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.85597602,-87.66606217_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_058,satellite_fake:bucket_058,base,0
+G:\shixi\April\test\gpt image2\1776911240309-k054r1.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/GLIDE_1000_200_09_906_glide_00131.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_117,genimage_fake:bucket_117,base,0
+"/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/41.85495022,-87.67423019_mbev.jpg",1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_029,satellite_fake:bucket_029,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/2pDN4-H1S25YuI1nCRtH6A_grdView_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_062,satellite_fake:bucket_062,base,0
+G:\shixi\April\test\dataset_futuristic_city\images\00001_Playing_with_AI_image_generating__Neural_Networks__--_See_input_text_in_descript_f7703f8e20e0.jpg,1,hard,collected,photo,gpt,hard,3.0,1,1,images,hard:images,iter_20260512_001,1
+G:\shixi\April\test\gpt image2\ChatGPT Image 2026年4月22日 14_41_13.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+G:\shixi\April\test\gpt image2\80df12bf-ceb3-4c52-90d2-838e5f1f4e7f.png,1,hard,collected,photo,gpt,hard,3.0,1,1,gpt image2,hard:gpt image2,iter_20260512_001,1
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/satellite/fake/0033866_fake_B.png,1,satellite_fake,satellite,root,unknown_fake,seen,1.0,0,1,bucket_045,satellite_fake:bucket_045,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/414_sdv4_00118.png,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_032,genimage_fake:bucket_032,base,0
+/ai_paas_jf/pangqs/AIGC/safepp_pytorch/data/test/genimage/fake/850_adm_139.PNG,1,genimage_fake,genimage,root,unknown_fake,seen,1.0,0,1,bucket_105,genimage_fake:bucket_105,base,0

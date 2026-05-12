@@ -1,0 +1,13 @@
+exts: [jpg, jpeg, png, webp, bmp]
+recursive: true
+sources:
+  - name: hard
+    path: G:\shixi\April\test
+    label: 1
+    dataset: collected
+    domain: photo
+    generator: gpt
+    split_hint: hard
+    is_hard_negative: 1
+    sample_weight: 3.0
+

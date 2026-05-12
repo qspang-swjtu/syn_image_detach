@@ -29,8 +29,19 @@ def setup_distributed():
         rank = int(os.environ['RANK'])
         world_size = int(os.environ['WORLD_SIZE'])
         local_rank = int(os.environ['LOCAL_RANK'])
-        torch.cuda.set_device(local_rank)
-        dist.init_process_group(backend='nccl', init_method='env://')
+        cuda_available = torch.cuda.is_available()
+        if cuda_available:
+            device_count = torch.cuda.device_count()
+            if local_rank >= device_count:
+                raise RuntimeError(
+                    f'LOCAL_RANK={local_rank} is out of range for {device_count} visible CUDA device(s). '
+                    'Reduce NPROC or set CUDA_VISIBLE_DEVICES correctly.'
+                )
+            torch.cuda.set_device(local_rank)
+        backend = os.environ.get('DIST_BACKEND')
+        if not backend:
+            backend = 'nccl' if cuda_available and dist.is_nccl_available() else 'gloo'
+        dist.init_process_group(backend=backend, init_method='env://')
         return True, rank, world_size, local_rank
     return False, 0, 1, 0
 
@@ -138,7 +149,10 @@ def main():
 
     model = build_model(cfg).to(device)
     if distributed:
-        model = DDP(model, device_ids=[local_rank], find_unused_parameters=False)
+        ddp_kwargs = {'find_unused_parameters': False}
+        if device.type == 'cuda':
+            ddp_kwargs['device_ids'] = [local_rank]
+        model = DDP(model, **ddp_kwargs)
 
     optimizer = torch.optim.AdamW(
         model.parameters(),

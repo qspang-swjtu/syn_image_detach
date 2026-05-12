@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f8fc;
+  color: #182230;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-sider {
+  border-right: 1px solid #e6edf5;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.brand {
+  min-height: 96px;
+  padding: 24px 18px 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #eef3f9;
+}
+
+.brand-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: #1677ff;
+  font-size: 26px;
+  background: #eaf3ff;
+  border: 1px solid #cfe4ff;
+  border-radius: 8px;
+}
+
+.brand-title {
+  margin: 0 0 2px !important;
+}
+
+.side-menu {
+  border-inline-end: 0 !important;
+  padding: 12px;
+}
+
+.app-header {
+  min-height: 88px;
+  padding: 18px 28px;
+  border-bottom: 1px solid #e6edf5;
+  display: flex;
+  align-items: center;
+}
+
+.page-heading {
+  margin: 0 !important;
+}
+
+.app-content {
+  padding: 24px 28px 36px;
+}
+
+.page-stack {
+  width: 100%;
+}
+
+.page-intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.page-intro h2,
+.section-head h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.panel-card {
+  border: 1px solid #e5edf6;
+  box-shadow: 0 10px 28px rgba(16, 42, 67, 0.04);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.plan-group {
+  display: grid;
+  gap: 12px;
+}
+
+.plan-group .ant-radio-button-wrapper {
+  height: auto;
+  min-height: 44px;
+  padding: 10px 14px;
+  line-height: 1.45;
+  border-radius: 8px;
+  border-inline-start-width: 1px;
+}
+
+.plan-group .ant-radio-button-wrapper::before {
+  display: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.status-tag {
+  text-transform: uppercase;
+  letter-spacing: 0;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.log-card .ant-card-body {
+  max-height: 398px;
+  overflow: auto;
+}
+
+.log-line {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  color: #344054;
+  font-size: 12px;
+}
+
+.sticky-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.center-box {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+}
+
+.gate-checks {
+  display: grid;
+  gap: 12px;
+}
+
+.gate-check {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: start;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  background: #fbfdff;
+}
+
+.final-advice {
+  border-color: #b7eb8f;
+  background: #f6ffed;
+}
+
+.metric-card {
+  border: 1px solid #e5edf6;
+  min-height: 132px;
+  box-shadow: 0 10px 24px rgba(16, 42, 67, 0.035);
+}
+
+.metric-card-head {
+  min-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.metric-string {
+  margin: 0 !important;
+  font-size: 20px !important;
+  line-height: 1.35 !important;
+  word-break: break-word;
+}
+
+.stage-timeline {
+  padding: 10px 0 4px;
+}
+
+.summary-tile {
+  min-height: 92px;
+  padding: 14px;
+  border: 1px solid #edf2f7;
+  background: #fbfdff;
+  border-radius: 8px;
+}
+
+.card-actions {
+  margin-top: 14px;
+}
+
+.dataset-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.flow-segment {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 0 auto;
+}
+
+.flow-card-group {
+  display: grid;
+  gap: 8px;
+  min-width: 168px;
+}
+
+.flow-node {
+  padding: 11px 12px;
+  border: 1px solid #cfe4ff;
+  background: #f4f9ff;
+  border-radius: 8px;
+  color: #0958d9;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.flow-arrow {
+  color: #98a2b3;
+  font-size: 18px;
+}
+
+.field-spec ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #475467;
+}
+
+.settings-section {
+  margin-bottom: 16px;
+}
+
+.inner-alert {
+  margin-bottom: 14px;
+}
+
+.create-steps {
+  margin-bottom: 24px;
+}
+
+.stepped-form {
+  display: grid;
+  gap: 18px;
+}
+
+.step-section {
+  padding: 18px;
+  border: 1px solid #edf2f7;
+  background: #fbfdff;
+  border-radius: 8px;
+}
+
+.step-section h4 {
+  margin-top: 0;
+}
+
+.preflight-desc,
+.preflight-summary {
+  margin-top: 14px;
+}
+
+.path-descriptions .ant-descriptions-item-content {
+  min-width: 0;
+}
+
+.path-value {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-all;
+  line-height: 1.6;
+}
+
+.json-value {
+  margin: 8px 0 0 !important;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.manifest-builder-wrap {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #edf2f7;
+}
+
+.manifest-builder {
+  margin-top: 4px;
+}
+
+.manifest-source-card {
+  border-color: #e6edf5;
+  background: #fbfdff;
+}
+
+.yaml-preview-card {
+  border-color: #e6edf5;
+}
+
+.yaml-preview {
+  margin: 0;
+  padding: 14px;
+  max-height: 360px;
+  overflow: auto;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #344054;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.task-log-window {
+  height: 360px;
+  overflow: auto;
+  padding: 12px;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  background: #fbfdff;
+}
+
+.task-log-line {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 4px 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+@media (max-width: 860px) {
+  .app-shell {
+    display: block;
+  }
+
+  .app-sider {
+    position: relative;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto;
+  }
+
+  .app-sider .ant-layout-sider-children {
+    display: block;
+  }
+
+  .brand {
+    min-height: 74px;
+  }
+
+  .app-header {
+    padding: 16px;
+  }
+
+  .app-content {
+    padding: 16px;
+  }
+
+  .sticky-actions,
+  .form-actions {
+    justify-content: stretch;
+    flex-direction: column;
+  }
+
+  .dataset-flow {
+    align-items: flex-start;
+  }
+}

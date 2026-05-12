@@ -1,0 +1,17 @@
+base_csv: G:\shixi\May\code\syn_image_detach\safepp_pytorch\manifests\base_index.csv
+append_csvs:
+- G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001\increment_from_manifest.csv
+output_csv: G:\shixi\May\code\syn_image_detach\safepp_pytorch\data\iterations\iter_20260512_001\all_samples.csv
+dedup_key: path
+keep: last
+rows_before_dedup: 5067
+rows_after_dedup: 5067
+duplicates_removed: 0
+by_label:
+  0: 1808
+  1: 3259
+by_split_hint:
+  seen: 5000
+  hard: 67
+hard_rows: 67
+num_unique_paths: 5067
